@@ -12,7 +12,7 @@
 
 **Team Proposal**
 
-	The goal of our team is to create a webapp educating Americans about hurricane preparedness. Our target population would be families and individuals who are living in hurricane prone areas. Our team members aren’t part of our target population because Southern California is not a hurricane prone area. The possible real world data we have looked and are planning to use are data from the Homeland Infrastructure Foundation-Level Data that provides us with datasets about hurricane evacuation routes and national shelter system facilities.
+The goal of our team is to create a webapp educating Americans about hurricane preparedness. Our target population would be families and individuals who are living in hurricane prone areas. Our team members aren’t part of our target population because Southern California is not a hurricane prone area. The possible real world data we have looked and are planning to use are data from the Homeland Infrastructure Foundation-Level Data that provides us with datasets about hurricane evacuation routes and national shelter system facilities.
 
 **Data and API**
 
