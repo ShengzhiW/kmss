@@ -1,9 +1,8 @@
 
-**Team KMSS** \
- \
+# Team KMSS
+
+
 **Team Members:**
-
-
 
 *   Sierra Gutierrez
 *   Marjorie Tolentino 
