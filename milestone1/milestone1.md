@@ -1,4 +1,4 @@
-## **Team KMSS**
+# **Team KMSS**
 
 ## Team Members
 * [Sierra Gutierre](https://github.com/sierracaitlin)<br />
