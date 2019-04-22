@@ -1,10 +1,10 @@
 ## **Team KMSS**
 
 ## Team Members
-[Sierra Gutierre](https://github.com/sierracaitlin)
-[Marjorie Tolentino](https://github.com/marj-nt)
-[Shengzhi Wan](https://github.com/ShengzhiW)
-[Kenny Luc](https://github.com/kennyyluc)
+* [Sierra Gutierre](https://github.com/sierracaitlin)<br />
+* [Marjorie Tolentino](https://github.com/marj-nt)<br />
+* [Shengzhi Wan](https://github.com/ShengzhiW)<br />
+* [Kenny Luc](https://github.com/kennyyluc)<br />
 
 
 
@@ -29,12 +29,12 @@ The goal of our team is to create a webapp educating Americans about hurricane p
 
 ## Data and API
 
-[National Shelter System Facilities](https://hifld-geoplatform.opendata.arcgis.com/datasets/national-shelter-system-facilities/data)
-[Evacuation Route Data](https://hifld-geoplatform.opendata.arcgis.com/datasets/hurricane-evacuation-routes?geometry=-99.092%2C30.473%2C-93.819%2C31.298)
-[Tornado Tracks](https://hifld-geoplatform.opendata.arcgis.com/datasets/historical-tornado-tracks)
-[Mobile Homes](https://hifld-geoplatform.opendata.arcgis.com/datasets/mobile-home-parks)
-[Open Weather Map](https://openweathermap.org/api)
-[Twitter](https://developer.twitter.com/)
+[National Shelter System Facilities](https://hifld-geoplatform.opendata.arcgis.com/datasets/national-shelter-system-facilities/data)<br />
+[Evacuation Route Data](https://hifld-geoplatform.opendata.arcgis.com/datasets/hurricane-evacuation-routes?geometry=-99.092%2C30.473%2C-93.819%2C31.298)<br />
+[Tornado Tracks](https://hifld-geoplatform.opendata.arcgis.com/datasets/historical-tornado-tracks)<br />
+[Mobile Homes](https://hifld-geoplatform.opendata.arcgis.com/datasets/mobile-home-parks)<br />
+[Open Weather Map](https://openweathermap.org/api)<br />
+[Twitter](https://developer.twitter.com/)<br />
 
 
 ## Storyboards & Prototyping Ideas
