@@ -49,5 +49,14 @@ Someone’s cousin was recently affected by a hurricane and since they both live
 ![Image of Storyboard 2](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Storyboards/Storyboards.002.png)
 
 ###Paper Prototype 1
+![Image of Prototype 1](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Wireframes/Wireframe1-1.png)
+![Image of Prototype 1](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Wireframes/Wireframe1-2.png)
+![Image of Prototype 1](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Wireframes/Wireframe1-3.png)
+![Image of Prototype 1](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Wireframes/Wireframe1-4.png)
+
 
 ###Paper Prototype 2
+![Image of Prototype 2](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Wireframes/Wireframe2-1.png)
+![Image of Prototype 2](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Wireframes/Wireframe2-2.png)
+![Image of Prototype 2](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Wireframes/Wireframe2-3.png)
+![Image of Prototype 2](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Wireframes/Wireframe2-4.png)
