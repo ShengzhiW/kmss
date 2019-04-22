@@ -41,9 +41,12 @@ The goal of our team is to create a webapp educating Americans about hurricane p
 
 ### Storyboard 1
 Family who newly moved into a hurricane prone area, previously lived in the west coast and they have no knowledge on how to be prepared in case of an emergency
+![Image of Storyboard 1](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Storyboards/Storyboards.001.png)
+
 
 ### Storyboard 2
 Someone’s cousin was recently affected by a hurricane and since they both lived in hurricane prone areas, he wanted to educate himself more
+![Image of Storyboard 2](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone1/Storyboards/Storyboards.002.png)
 
 ###Paper Prototype 1
 
