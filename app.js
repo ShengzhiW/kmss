@@ -7,6 +7,41 @@ var logger = require('morgan');
 var exphbs  = require('express-handlebars');
 
 
+var firebase = require("firebase-admin");
+
+var serviceAccount = require("./serviceAccountKey.json");
+
+firebase.initializeApp({
+  credential: firebase.credential.cert(serviceAccount),
+  databaseURL: "https://hurrycane-52d0c.firebaseio.com"
+});
+
+
+var db = firebase.database();
+// var ref = db.ref("restricted_access/secret_document");
+var ref = db.ref("hurricane-facts");
+ref.once("value", function(snapshot) {
+  console.log(snapshot.val());
+});
+
+// var usersRef = ref.child("users");
+// usersRef.set({
+//   alanisawesome: {
+//     date_of_birth: "June 23, 1912",
+//     full_name: "Alan Turing"
+//   },
+//   gracehop: {
+//     date_of_birth: "December 9, 1906",
+//     full_name: "Grace Hopper"
+//   }
+// });
+
+// var usersRef = ref.child("facts");
+// usersRef.set({
+//   fact1: 'A tropical cyclone is a rapidly rotating storm system characterized by a low-pressure center, a closed low-level atmospheric circulation, strong winds, and a spiral arrangement of thunderstorms that produce heavy rain. Depending on its location and strength, a tropical cyclone is referred to by different names, including hurricane (/ˈhʌrɪkən, -keɪn/),[1][2][3] typhoon (/taɪˈfuːn/), tropical storm, cyclonic storm, tropical depression, and simply cyclone.[4] A hurricane is a tropical cyclone that occurs in the Atlantic Ocean and northeastern Pacific Ocean, and a typhoon occurs in the northwestern Pacific Ocean; in the south Pacific or Indian Ocean, comparable storms are referred to simply as "tropical cyclones" or "severe cyclonic storms".[4]', 
+//   fact2: '"Tropical" refers to the geographical origin of these systems, which form almost exclusively over tropical seas. "Cyclone" refers to their winds moving in a circle,[5] whirling round their central clear eye, with their winds blowing counterclockwise in the Northern Hemisphere and clockwise in the Southern Hemisphere. The opposite direction of circulation is due to the Coriolis effect. Tropical cyclones typically form over large bodies of relatively warm water. They derive their energy through the evaporation of water from the ocean surface, which ultimately recondenses into clouds and rain when moist air rises and cools to saturation. This energy source differs from that of mid-latitude cyclonic storms, such as noreasters and European windstorms, which are fueled primarily by horizontal temperature contrasts. Tropical cyclones are typically between 100 and 2000 km in diameter.'
+// });
+
 
 var login = require('./routes/login');
 var index = require('./routes/index');
