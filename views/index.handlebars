@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+      <title>Home</title>
+      <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyA9b1S88E6EeqlOBNs14xa1EKRpwcwLMhQ",
+          authDomain: "hurrycane-52d0c.firebaseapp.com",
+          databaseURL: "https://hurrycane-52d0c.firebaseio.com",
+          projectId: "hurrycane-52d0c",
+          storageBucket: "hurrycane-52d0c.appspot.com",
+          messagingSenderId: "45616526834"
+        };
+        firebase.initializeApp(config);
+      </script>
+  
+  </head>
+  <body class="home-body">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/index">HURRYcane</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav navbar-center">
+          <a class="nav-item nav-link active" href="/index">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="/preparations">Preparations</a>
+          <a class="nav-item nav-link" href="/maps">Hurricane Maps</a>
+          <a class="nav-item nav-link" href="/trending">Trending</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+      <h3>My Profile</h3>
+      <img src="/images/profile-picture.png" alt="Profile picture">
+      <a href="/location">My Location</a>
+      <a href="/notifications">Edit Notifications</a>
+
+    </div>
+
+    <!-- Page Content -->
+    <div class="facts">
+      <h2 class="center headings">Hurricane Facts</h2>
+
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col col-xs-12 col-md-6 ">
+              <iframe src="//fave.api.cnn.io/v1/fav/?video=weather/2014/08/07/hurricane-facts-orig-cfb.cnn&customer=cnn&edition=domestic&env=prod" frameborder="0"></iframe>
+          </div>
+          <div class="col col-xs-12 col-md-6  center">
+              <img src="/images/hurricane.jpg" alt="Image of hurricane">
+              These are some facts about hurricanes.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
