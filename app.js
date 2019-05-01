@@ -70,8 +70,7 @@ function getRandomInt(max) {
 app.get('/facts', (req, res) =>{
 
 	ref.once("value", function(snapshot) {
-	var data = snapshot.val()[getRandomInt(20)]
-  	console.log(data);
+	var data = snapshot.val()[getRandomInt(19)]
   	res.send(data)
 });
 
