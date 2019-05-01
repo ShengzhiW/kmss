@@ -6,4 +6,4 @@
 * [Shengzhi Wan](https://github.com/ShengzhiW)<br />
 * [Kenny Luc](https://github.com/kennyyluc)<br />
 
-# [HURRYcane App](http://hurrycane-app.herokuapp.com/)
+### [HURRYcane App](http://hurrycane-app.herokuapp.com/)
