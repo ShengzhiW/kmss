@@ -38,3 +38,7 @@ img, iframe {
 iframe {
     min-height: 100%;
 }
+
+.facts {
+  margin-left: 25%;
+}
