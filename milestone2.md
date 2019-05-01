@@ -9,7 +9,7 @@ Our core idea is still the same from milestone 1, which is to make a hurricane p
 We based our UI Skeleton on our first prototype, where the main focus is on hurricane preparedness and awareness, instead of hurricane maps. As aforementioned, the home screen now includes a profile sidebar, which used to only have hurricane facts and statistics. The second screen of prototype one was a basic checklist. We decided to add more of the "preparedness" aspect in our UI by giving instructions of what to do prior to, during, and after a hurricane.
 
 ![Image of Home Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone2/home.png)
-![Image of Preparations Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone2/home.png)
-![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone2/home.png)
+![Image of Preparations Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone2/preparations.png)
+![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone2/map.png)
 
 
