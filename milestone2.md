@@ -12,4 +12,4 @@ We based our UI Skeleton on our first prototype, where the main focus is on hurr
 ![Image of Preparations Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone2/preparations.png)
 ![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone2/map.png)
 
-
+Our UI skeleton differs from our paper prototypes mainly through how we wanted to organize and display data on each page. Instead of having our application span only the center columns of the browser, it instead spans the whole width of the browser. This is because we wanted to maximize the screen real estate, allowing us to include more information.
