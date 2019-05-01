@@ -20,9 +20,7 @@ firebase.initializeApp({
 var db = firebase.database();
 // var ref = db.ref("restricted_access/secret_document");
 var ref = db.ref("hurricane-facts");
-ref.once("value", function(snapshot) {
-  console.log(snapshot.val());
-});
+
 
 // var usersRef = ref.child("users");
 // usersRef.set({
@@ -63,6 +61,23 @@ app.get('/index', index.view);
 app.get('/maps', maps.view);
 app.get('/preparations', preparations.view);
 app.get('/trending', trending.view);
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+
+app.get('/facts', (req, res) =>{
+
+	ref.once("value", function(snapshot) {
+	var data = snapshot.val()[getRandomInt(20)]
+  	console.log(data);
+  	res.send(data)
+});
+
+	
+});
+
 
 app.listen(3000);
 
