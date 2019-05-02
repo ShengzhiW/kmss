@@ -2,11 +2,12 @@
 
 html {
     min-height: 100%;
+    background: linear-gradient(#FFFFFF, #D4F0FF);
 
 }
 
 .home-body {
-    background: linear-gradient(rgb(255, 255, 255), rgb(168, 220, 255));
+    background-color: rgba(0,0,0,0);
     margin: 0 auto;
     min-height: 100%;
     font-family: 'Overpass';
@@ -24,6 +25,15 @@ html {
     text-align: center;
 }
 
+.navbar{
+    position: fixed!important;
+    float: left;
+    width: 100vw;
+    z-index: 1000000;
+    background-color: rgba(255,255,255,.5);
+    padding-left: 0!important;
+}
+
 .navbar-nav .navbar-center {
     position: absolute;
     left: 50%;
@@ -31,6 +41,13 @@ html {
 }
 
 .navbar-brand{
+    width: 200px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.nav-gap{
+    padding-top: 100px;
 }
 
 img, iframe {
@@ -43,6 +60,21 @@ iframe {
 
 .facts {
   margin-left: 25%;
+}
+
+.container-custom{
+    width: calc(100vw - 205px);
+    min-height: 100vh;
+    background-color: #F5F5F5;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 200px;
+}
+
+.container-custom-1{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -158,10 +190,54 @@ iframe {
 
 }
 
+
+
+
+
+
+
+.home-card{
+    width: calc(100% - 30px);
+    height: 400px;
+    background-color: white;
+    margin: 15px;
+    /*box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);*/
+    border-radius: 10px;
+}
+
+
+
+.profile-bar{
+    background-color: white;
+    background-image: url(../images/sidebar.jpg);
+    background-size: cover;
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);
+    padding-top: 100px;
+}
+
+.profile-bar h3{
+    text-align: center;
+    background-color: rgba(255,255,255,.5);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0 10px 0;
+    border-radius: 5px;
+}
+
 .profile-picture{
     border-radius: 100%;
-    width: 80%;
-    margin-left: 10%;
+    width: 70%;
+    border: 10px solid rgba(255,255,255,.5);
+    margin-left: 15%;
+    margin-top: 40px;
+    margin-bottom: 30px
 }
 
 .profile-links{
@@ -177,11 +253,7 @@ iframe {
     text-decoration: none;
 }
 
-.profile-links:hover{
+.profile-links a:hover{
     color: white;
     text-decoration: none;
-}
-
-.profile-sidebar h3{
-    text-align: center;
 }
