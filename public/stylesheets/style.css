@@ -5,11 +5,6 @@ html {
 
 }
 
-
-
-
-
-
 .home-body {
     background: linear-gradient(rgb(255, 255, 255), rgb(168, 220, 255));
     margin: 0 auto;
@@ -29,12 +24,14 @@ html {
     text-align: center;
 }
 
-.navbar-nav.navbar-center {
+.navbar-nav .navbar-center {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
 }
 
+.navbar-brand{
+}
 
 img, iframe {
     width: 100%;
@@ -138,12 +135,53 @@ iframe {
 
 
 #hur-fact{
-    width: 600px;
-    height: auto;
-    margin-left: calc(50% - 300px); 
+    width: 800px;
+    height: 400px;
+    overflow: scroll;
+    margin-left: calc(50% - 400px); 
     background-color: white;
     border-radius: 10px;
     padding: 50px;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 100px
+}
+
+/* home */
+
+.profile-sidebar{
+    width: 180px;
+    background-color: rgba(255,255,255,.3)!important;
+    top: 35vh;
+    height: 30vh;
+    position: fixed;
+    border-radius: 20px;
+
+}
+
+.profile-picture{
+    border-radius: 100%;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.profile-links{
+    background-color: gray;
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+}
+
+.profile-links:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.profile-sidebar h3{
+    text-align: center;
 }
