@@ -3,10 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
 var exphbs  = require('express-handlebars');
-
-
 var firebase = require("firebase-admin");
 
 var serviceAccount = require("./serviceAccountKey.json");
@@ -42,7 +39,7 @@ var ref = db.ref("hurricane-facts");
 
 
 var login = require('./routes/login');
-var index = require('./routes/index');
+var home = require('./routes/home');
 var maps = require('./routes/maps');
 var preparations = require('./routes/preparations');
 var trending = require('./routes/trending');
@@ -51,13 +48,16 @@ var trending = require('./routes/trending');
 var app = express();
 
 
+
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', exphbs());
+app.engine('handlebars', exphbs({
+ 	partialsDir: path.join(__dirname, '/views/partials')
+}));
 app.set('view engine', 'handlebars');
 
 app.get('/', login.view);
-app.get('/index', index.view);
+app.get('/home', home.view);
 app.get('/maps', maps.view);
 app.get('/preparations', preparations.view);
 app.get('/trending', trending.view);
@@ -68,7 +68,6 @@ function getRandomInt(max) {
 
 
 app.get('/facts', (req, res) =>{
-
 	ref.once("value", function(snapshot) {
 	var data = snapshot.val()[getRandomInt(19)]
   	res.send(data)
@@ -94,9 +93,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  next(createError(404));
-});
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
 
 // error handler
 // app.use(function(err, req, res, next) {
