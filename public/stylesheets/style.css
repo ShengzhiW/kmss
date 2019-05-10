@@ -22,6 +22,11 @@ html {
     font-family: 'Oswald', sans-serif;
 }
 
+#headings-trending {
+    padding-top: 60px !important;
+    padding-bottom: 20px !important;
+}
+
 .center {
     text-align: center;
 }
