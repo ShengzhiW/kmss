@@ -52,8 +52,6 @@ var app = express();
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({
-	defaultLayout: 'main',
-	layoutsDir: path.join(__dirname, '/layouts'),
  	partialsDir: path.join(__dirname, '/views/partials')
 }));
 app.set('view engine', 'handlebars');
