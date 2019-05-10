@@ -42,7 +42,7 @@ var ref = db.ref("hurricane-facts");
 
 
 var login = require('./routes/login');
-var index = require('./routes/index');
+var home = require('./routes/home');
 var maps = require('./routes/maps');
 var preparations = require('./routes/preparations');
 var trending = require('./routes/trending');
@@ -57,7 +57,7 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 app.get('/', login.view);
-app.get('/index', index.view);
+app.get('/home', home.view);
 app.get('/maps', maps.view);
 app.get('/preparations', preparations.view);
 app.get('/trending', trending.view);
