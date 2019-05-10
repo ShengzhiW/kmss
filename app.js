@@ -3,10 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
 var exphbs  = require('express-handlebars');
-
-
 var firebase = require("firebase-admin");
 
 var serviceAccount = require("./serviceAccountKey.json");
@@ -51,9 +48,12 @@ var trending = require('./routes/trending');
 var app = express();
 
 
+
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', exphbs());
+app.engine('handlebars', exphbs({
+ 	partialsDir: __dirname + '/views/partials/'
+}));
 app.set('view engine', 'handlebars');
 
 app.get('/', login.view);
@@ -68,7 +68,6 @@ function getRandomInt(max) {
 
 
 app.get('/facts', (req, res) =>{
-
 	ref.once("value", function(snapshot) {
 	var data = snapshot.val()[getRandomInt(19)]
   	res.send(data)
