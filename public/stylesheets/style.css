@@ -2,8 +2,22 @@
 
 html {
     min-height: 100%;
-    background: #f2f2f2;
+}
 
+body{
+    background: #f2f2f2;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.nav-padding{
+    widows: 100vw;
+    height: 40px;
 }
 
 .home-body {
@@ -53,14 +67,20 @@ twitter-widget{
     float: left;
     width: 100vw;
     z-index: 1000000;
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.9);
     padding-left: 0!important;
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .navbar-nav .navbar-center {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
+}
+
+.nav-item{
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .navbar-brand{
@@ -189,8 +209,15 @@ iframe {
 
 
 /* ----- Login ----- */
+.login-home{
+    background-color: white;
+}
+
+
  .login-welcome, .login-main, .login-new-account {
-     text-align: center;
+    margin-top: 30vh;
+    text-align: center;
+}
 }
  .login-welcome {
      margin-top: 50px;
@@ -307,13 +334,18 @@ iframe {
 
 .home-card{
     width: calc(100% - 30px);
-    height: 400px;
-    background-color: white;
+    height: 300px;
+    background-color: #5D5D5D;
     margin: 15px;
     /*box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.1);*/
     border-radius: 10px;
+    overflow: hidden;
 }
 
+
+#home-city{
+    text-align: center;
+}
 
 
 .profile-bar{
@@ -373,17 +405,27 @@ iframe {
 
 /*-------Trending--------*/
 
-.search-bar {
-  padding-bottom: 15px;
+.trend-search-bar {
+  padding: 15px;
+  background-color: #1da1f2;
+  border-radius: 10px;
+  margin-bottom: 40px;
   
 }
 
-.search-bar input[type=text] {
-  padding: 6px;
+.trend-search-bar input[type=text] {
+  padding: 10px;
   border: none;
-  margin-top: 8px;
-  margin-right: 16px;
   font-size: 17px;
   width: 700px;
+  background-color: #1da1f2;
+  color: white;
+  text-align: center;
+  font-size: 1.2em
+}
 
+.trend-search-bar input[type=text]::placeholder {
+    color:#73D7F3;
+    text-align: center;
+    font-size: 1.2em
 }

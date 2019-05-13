@@ -3,13 +3,11 @@
     {{> head-hc}}
     <body class="home-body">
         {{> nav-hc}}
-
-        <div>
-        </div>
         <div class="profile-bar">
             <h3>My Profile</h3>
             <img src="/images/profile-picture.png" class="profile-picture" alt="Profile picture">
-            <div class="profile-links"><a href="/location">My Location</a></div>
+            <p id="home-city"> <br><br><br> </p>
+            <div class="profile-links"> <a onclick="getgeo()">My Location</a></div>
             <div class="profile-links"><a href="/notifications">Edit Notifications</a></div>
         </div>
         <div class="container-custom nav-gap">
@@ -17,38 +15,24 @@
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="facts">
-                        <button id="new-fact">Get a Random Hurricane Fact</button>
-                        <div id="hur-fact"></div>
+                        <button id="new-fact">Get Another Random Hurricane Fact</button>
+                        <div id="hur-fact">
+                        The most intense tropical cyclone ever measured when considering a storm's central pressure (this pressure drops as cyclones become stronger) was Typhoon Tip, which on Oct. 12, 1979, had a central pressure of 870 millibars.</div>
                     </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12 col-lg-6">
-                        <div class="home-card"></div>
+                        <div class="home-card">
+                        <iframe src="//fave.api.cnn.io/v1/fav/?video=weather/2014/08/07/hurricane-facts-orig-cfb.cnn&customer=cnn&edition=domestic&env=prod" frameborder="0"></iframe>
+                        </div>
                     </div>
                     <div class="col-md-12 col-lg-6">
-                        <div class="home-card"></div>
+                        <div class="home-card"><img src="/images/hurricane.jpg" alt="Image of hurricane"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Page Content -->
-        <!--
-
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col col-xs-12 col-md-6 ">
-                    <iframe src="//fave.api.cnn.io/v1/fav/?video=weather/2014/08/07/hurricane-facts-orig-cfb.cnn&customer=cnn&edition=domestic&env=prod" frameborder="0"></iframe>
-                </div>
-                <div class="col col-xs-12 col-md-6 center">
-                    <img src="/images/hurricane.jpg" alt="Image of hurricane">
-                    ↑ This is an image of a hurricane
-                </div>
-              </div>
-            </div>
-            </div>
-            -->
-
             <script type="text/javascript">
             $( "#new-fact" ).click(function() {
               // alert( "Handler for .click() called." );
@@ -58,6 +42,7 @@
                   data: 'json',
                   success: function(html){
                      $("#hur-fact").html(html)
+                     console.log(html)
                      // alert(html);
                   }
               });
@@ -65,7 +50,24 @@
             </script>
 
             <script type="text/javascript">
+                  window.cb = function cb(json) {
+          //do what you want with the json
+          $("#home-city").html('Your Location:<br>'+json.address.road + ', ' + json.address.city+'<br>'+json.address.country);
+      }
 
+              function getgeo() {
+                console.log("getting location...")
+                navigator.geolocation.getCurrentPosition(function(location) {
+
+                  console.log(location.coords.latitude);
+                  console.log(location.coords.longitude);
+                  console.log(location.coords.accuracy);
+
+                  var s = document.createElement('script');       
+    s.src = 'http://nominatim.openstreetmap.org/reverse?json_callback=cb&format=json&lat='+location.coords.latitude+'&lon='+location.coords.longitude+'&zoom=27&addressdetails=1';
+    document.getElementsByTagName('head')[0].appendChild(s);
+              });
+              }
             </script>
     </body>
 </html>
