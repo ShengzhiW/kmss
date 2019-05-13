@@ -5,9 +5,9 @@
 ## Home Page
 ![Image of Home Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/2.png)
 ## Preparations Page
-![Image of Preparations Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/4.png)
+![Image of Preparations Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/3.png)
 ## Maps Page
-![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/3.png)
+![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/4.png)
 ## Trending Page
 ![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/5.png)
 
