@@ -1,15 +1,15 @@
 # Screenshots of latest UI skeleton webpages.
 
 ## Login Page
-![Image of Login Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/1.png)
+![Image of Login Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/01.png)
 ## Home Page
-![Image of Home Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/2.png)
+![Image of Home Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/02.png)
 ## Preparations Page
-![Image of Preparations Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/3.png)
+![Image of Preparations Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/03.png)
 ## Maps Page
-![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/4.png)
+![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/04.png)
 ## Trending Page
-![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/5.png)
+![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/05.png)
 
 # How UI skeleton screenshots have improved
 
