@@ -8,6 +8,8 @@
 ![Image of Preparations Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/3.png)
 ## Maps Page
 ![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/4.png)
+## Trending Page
+![Image of Maps Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone3/5.png)
 
 # How UI skeleton screenshots have improved
 
