@@ -57,6 +57,12 @@ button:focus {
   padding: 0!important;
 }
 
+
+.tweets-row-b{
+  margin-bottom: 70px;
+
+}
+
 twitter-widget{
   margin-top: 0!important;
   margin-bottom: 0!important;
@@ -410,6 +416,9 @@ iframe {
   background-color: #1da1f2;
   border-radius: 10px;
   margin-bottom: 40px;
+    margin-top : 30px;
+    width: 500px;
+    max-width: 90vw;
   
 }
 
@@ -417,15 +426,14 @@ iframe {
   padding: 10px;
   border: none;
   font-size: 17px;
-  width: 700px;
   background-color: #1da1f2;
   color: white;
   text-align: center;
-  font-size: 1.2em
+  font-size: 1.5em
 }
 
 .trend-search-bar input[type=text]::placeholder {
     color:#73D7F3;
     text-align: center;
-    font-size: 1.2em
+    font-size: .8em
 }
