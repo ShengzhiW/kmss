@@ -5,6 +5,39 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var exphbs  = require('express-handlebars');
 var firebase = require("firebase-admin");
+var fs = require('fs');
+var Twit = require('twit')
+
+var T = new Twit({
+  consumer_key:         'RUCao1GFyFBYTgMrIKT54lgvf',
+  consumer_secret:      '8ffCY1gaG8RehObBTWMrJxo5C3fCSg7kwhLTHcQCOM7oyVbt1B',
+  access_token:         '1127724845750374400-Akjmfoy0bZgwTsF1Kwg0vF92czNpwL',
+  access_token_secret:  'dDO2MN3wmbsmSFzWZqemKh5E3Fc2E1xhtmJlhbDuWYWoI',
+  timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
+  strictSSL:            true,     // optional - requires SSL certificates to be valid.
+});
+
+function grabHurricaneSeasonTweets() {
+  var params = {
+    q: '[ hurricane season, hurricane warning ] since:2011-07-11 -filter:retweets',
+    count: 5,
+    result_type: 'recent',
+    lang: 'en'
+  }
+
+  T.get('search/tweets', params, gotData)
+
+}
+
+function gotData(err, data, respon) {
+  var tweets = data.statuses;
+  console.log("new");
+  tweets.map((items) => {
+    console.log(items.text);
+  })
+}
+
+setInterval(grabHurricaneSeasonTweets, 3000);
 
 var serviceAccount = require("./serviceAccountKey.json");
 
@@ -33,7 +66,7 @@ var ref = db.ref("hurricane-facts");
 
 // var usersRef = ref.child("facts");
 // usersRef.set({
-//   fact1: 'A tropical cyclone is a rapidly rotating storm system characterized by a low-pressure center, a closed low-level atmospheric circulation, strong winds, and a spiral arrangement of thunderstorms that produce heavy rain. Depending on its location and strength, a tropical cyclone is referred to by different names, including hurricane (/ˈhʌrɪkən, -keɪn/),[1][2][3] typhoon (/taɪˈfuːn/), tropical storm, cyclonic storm, tropical depression, and simply cyclone.[4] A hurricane is a tropical cyclone that occurs in the Atlantic Ocean and northeastern Pacific Ocean, and a typhoon occurs in the northwestern Pacific Ocean; in the south Pacific or Indian Ocean, comparable storms are referred to simply as "tropical cyclones" or "severe cyclonic storms".[4]', 
+//   fact1: 'A tropical cyclone is a rapidly rotating storm system characterized by a low-pressure center, a closed low-level atmospheric circulation, strong winds, and a spiral arrangement of thunderstorms that produce heavy rain. Depending on its location and strength, a tropical cyclone is referred to by different names, including hurricane (/ˈhʌrɪkən, -keɪn/),[1][2][3] typhoon (/taɪˈfuːn/), tropical storm, cyclonic storm, tropical depression, and simply cyclone.[4] A hurricane is a tropical cyclone that occurs in the Atlantic Ocean and northeastern Pacific Ocean, and a typhoon occurs in the northwestern Pacific Ocean; in the south Pacific or Indian Ocean, comparable storms are referred to simply as "tropical cyclones" or "severe cyclonic storms".[4]',
 //   fact2: '"Tropical" refers to the geographical origin of these systems, which form almost exclusively over tropical seas. "Cyclone" refers to their winds moving in a circle,[5] whirling round their central clear eye, with their winds blowing counterclockwise in the Northern Hemisphere and clockwise in the Southern Hemisphere. The opposite direction of circulation is due to the Coriolis effect. Tropical cyclones typically form over large bodies of relatively warm water. They derive their energy through the evaporation of water from the ocean surface, which ultimately recondenses into clouds and rain when moist air rises and cools to saturation. This energy source differs from that of mid-latitude cyclonic storms, such as noreasters and European windstorms, which are fueled primarily by horizontal temperature contrasts. Tropical cyclones are typically between 100 and 2000 km in diameter.'
 // });
 
@@ -73,7 +106,7 @@ app.get('/facts', (req, res) =>{
   	res.send(data)
 });
 
-	
+
 });
 
 
