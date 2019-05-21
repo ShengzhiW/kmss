@@ -17,27 +17,54 @@ var T = new Twit({
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 });
 
+var tweetsArr = [];
+
 function grabHurricaneSeasonTweets() {
   var params = {
-    q: '[ hurricane season, hurricane warning ] since:2011-07-11 -filter:retweets',
+    q: '[ hurricane season, hurricane warning, hurricane] since:2011-07-11 -filter:retweets',
     count: 5,
     result_type: 'recent',
     lang: 'en'
   }
 
   T.get('search/tweets', params, gotData)
-
+  
 }
 
 function gotData(err, data, respon) {
-  var tweets = data.statuses;
+  let tweets = data.statuses;
   console.log("new");
-  tweets.map((items) => {
-    console.log(items.text);
-  })
-}
+  tweetsArr = [];
+  if (tweets) {
+    console.log(tweets);
+    tweets.map((items) => {
+      console.log(items.text);
+      tweetsArr.push(items.text);
+    })
+  }
+  else{
+    console.log("no tweets");
+  }
 
+  console.log(tweetsArr);
+
+}
 setInterval(grabHurricaneSeasonTweets, 3000);
+
+// app.get('/tweets', (req, res) =>{
+//   ref.once("value", function(snapshot) {
+//   let i = getRandomInt(19);
+//   var data = snapshot.val()[i]
+//   console.log(i);
+//   res.send(data)
+// });
+
+
+// });
+
+
+
+
 
 var serviceAccount = require("./serviceAccountKey.json");
 
@@ -102,12 +129,16 @@ function getRandomInt(max) {
 
 app.get('/facts', (req, res) =>{
 	ref.once("value", function(snapshot) {
-	var data = snapshot.val()[getRandomInt(19)]
-  	res.send(data)
+  let i = getRandomInt(19);
+	var data = snapshot.val()[i]
+  console.log(i);
+  res.send(data)
 });
 
 
 });
+
+
 
 
 app.listen(3000);
