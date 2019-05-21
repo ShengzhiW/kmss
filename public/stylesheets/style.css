@@ -398,11 +398,29 @@ iframe {
     text-align: center;
     border-radius: 100px;
     text-decoration: none;
+    cursor: pointer;
 }
+
+.profile-links:hover {
+    background-color: rgb(145, 145, 145);
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 .profile-links a:hover{
     color: white;
     text-decoration: none;
+    
 }
 
 .page-body{
