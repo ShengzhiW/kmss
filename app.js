@@ -15,7 +15,7 @@ var T = new Twit({
     access_token_secret: 'dDO2MN3wmbsmSFzWZqemKh5E3Fc2E1xhtmJlhbDuWYWoI',
     timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
     strictSSL: true, // optional - requires SSL certificates to be valid.
-});
+}); 
 
 var tweetsArr = [];
 
