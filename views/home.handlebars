@@ -16,8 +16,11 @@
                     <div class="col-xs-12">
                         <div class="facts">
                         <button id="new-fact">Get Another Random Hurricane Fact</button>
-                        <div id="hur-fact">
-                        The most intense tropical cyclone ever measured when considering a storm's central pressure (this pressure drops as cyclones become stronger) was Typhoon Tip, which on Oct. 12, 1979, had a central pressure of 870 millibars.</div>
+                        <div id="hur-fact-outer">
+                            <div id="hur-fact">
+                            The most intense tropical cyclone ever measured when considering a storm's central pressure (this pressure drops as cyclones become stronger) was Typhoon Tip, which on Oct. 12, 1979, had a central pressure of 870 millibars.
+                            </div>
+                        </div>
                     </div>
                     </div>
                 </div>
@@ -41,7 +44,8 @@
                   url: "/facts",
                   data: 'json',
                   success: function(html){
-                     $("#hur-fact").html(html)
+                    $("#hur-fact").hide().html(html).fadeIn();
+
                      console.log(html)
                      // alert(html);
                   }
