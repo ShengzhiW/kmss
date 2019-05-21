@@ -34,6 +34,7 @@ function grabHurricaneSeasonTweets() {
 function gotData(err, data, respon) {
   let tweets = data.statuses;
   console.log("new");
+
   tweetsArr = [];
   if (tweets) {
     console.log(tweets);
