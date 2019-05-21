@@ -24,7 +24,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row animated fadeIn slow">
                     <div class="col-md-12 col-lg-6">
                         <div class="home-card">
                         <iframe src="//fave.api.cnn.io/v1/fav/?video=weather/2014/08/07/hurricane-facts-orig-cfb.cnn&customer=cnn&edition=domestic&env=prod" frameborder="0"></iframe>
@@ -56,7 +56,7 @@
             <script type="text/javascript">
                   window.cb = function cb(json) {
           //do what you want with the json
-          $("#home-city").hide().html('Your Location:<br>'+json.address.road + ', ' + json.address.city+'<br>'+json.address.country).fadeIn();
+          $("#home-city").html('Your Location:<br>'+json.address.road + ', ' + json.address.city+'<br>'+json.address.country);
       }
 
               function getgeo() {
@@ -72,6 +72,7 @@
     document.getElementsByTagName('head')[0].appendChild(s);
               });
               }
+
             </script>
     </body>
 </html>
