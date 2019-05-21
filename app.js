@@ -32,9 +32,9 @@ function grabHurricaneSeasonTweets() {
 function gotData(err, data, respon) {
   var tweets = data.statuses;
   console.log("new");
-  tweets.map((items) => {
-    console.log(items.text);
-  })
+  // tweets.map((items) => {
+  //   console.log(items.text);
+  // })
 }
 
 setInterval(grabHurricaneSeasonTweets, 3000);
