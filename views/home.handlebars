@@ -56,7 +56,7 @@
             <script type="text/javascript">
                   window.cb = function cb(json) {
           //do what you want with the json
-          $("#home-city").html('Your Location:<br>'+json.address.road + ', ' + json.address.city+'<br>'+json.address.country);
+          $("#home-city").hide().html('Your Location:<br>'+json.address.road + ', ' + json.address.city+'<br>'+json.address.country).fadeIn();
       }
 
               function getgeo() {
