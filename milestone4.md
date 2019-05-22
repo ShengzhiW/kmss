@@ -1,7 +1,5 @@
 # Screenshots of latest UI skeleton webpages.
 
-## Home Page
-
 ### Login Page
 ![Image of Log In Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone4/001.png)
 ### Home Page
