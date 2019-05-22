@@ -1,9 +1,13 @@
 # Screenshots of latest UI skeleton webpages.
 
 ## Home Page
-![Image of Login Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone4/01.png)
+
 ## Profile Sidebar
-![Image of Home Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone4/02.png)
+![Image of Log In Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone4/001.png)
+![Image of Home Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone4/002.png)
+![Image of Preparations Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone4/003.png)
+![Image of Map Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone4/004.png)
+![Image of Trending Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone4/005.png)
 
 # How UI Skeleton has improved
 
