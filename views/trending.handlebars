@@ -58,7 +58,7 @@
                    $("#live-tweets").html("");
                   for (const tweet of html) {
                     console.log(tweet);
-                    $("#live-tweets").append('<div class="tweet-ind">'+linkify(tweet)+'</div>');
+                    $("#live-tweets").append('<div class="tweet-ind"><img src="/images/twitter.jpg" style="width: 20px; margin-right:20px">'+linkify(tweet)+'</div>');
                   }
                 },
                 error: function (request, status, error) {

@@ -21,8 +21,8 @@ var tweetsArr = [];
 
 function grabHurricaneSeasonTweets() {
     var params = {
-        q: '[ hurricane season, hurricane warning] since:2011-06-30 -filter:retweets',
-        count: 10,
+        q: '[hurricane, hurricane season, hurricane warning] since:2011-06-30 -filter:retweets',
+        count: 5,
         result_type: 'recent',
         lang: 'en'
     }
