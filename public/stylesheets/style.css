@@ -8,6 +8,8 @@ body{
     background: #f2f2f2;
 }
 
+
+
 input:focus,
 select:focus,
 textarea:focus,
@@ -21,7 +23,6 @@ button:focus {
 }
 
 .home-body {
-    background-color: rgba(0,0,0,0);
     margin: 0 auto;
     min-height: 100%;
     font-family: 'Ropa Sans';
@@ -201,7 +202,9 @@ iframe {
 .container-custom{
     width: calc(100vw - 205px);
     min-height: 100vh;
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../images/home-bg.jpg");
+    background-size: cover;
     display: inline-block;
     vertical-align: top;
     margin-left: 200px;
@@ -308,7 +311,7 @@ iframe {
 }
 
 
-#hur-fact{
+#hur-fact-outer{
     width: 800px;
     height: 400px;
     overflow: scroll;
@@ -352,6 +355,8 @@ iframe {
 #home-city{
     text-align: center;
 }
+
+
 
 
 .profile-bar{
@@ -398,11 +403,29 @@ iframe {
     text-align: center;
     border-radius: 100px;
     text-decoration: none;
+    cursor: pointer;
 }
+
+.profile-links:hover {
+    background-color: rgb(145, 145, 145);
+    color: white;
+    width: 80%;
+    margin-left: 10%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 
 .profile-links a:hover{
     color: white;
     text-decoration: none;
+    
 }
 
 .page-body{
