@@ -21,14 +21,12 @@ var tweetsArr = [];
 
 function grabHurricaneSeasonTweets() {
     var params = {
-        q: '[ hurricane season, hurricane warning, hurricane] since:2011-07-11 -filter:retweets',
-        count: 5,
+        q: '[ hurricane season, hurricane warning, tornado] since:2011-06-30 -filter:retweets',
+        count: 10,
         result_type: 'recent',
         lang: 'en'
     }
-
     T.get('search/tweets', params, gotData)
-
 }
 
 function gotData(err, data, respon) {
@@ -50,8 +48,6 @@ function gotData(err, data, respon) {
 
 }
 // setInterval(grabHurricaneSeasonTweets, 3000);
-
-
 
 
 var serviceAccount = require("./serviceAccountKey.json");
@@ -96,7 +92,6 @@ var trending = require('./routes/trending');
 var app = express();
 
 
-
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({
@@ -116,7 +111,7 @@ function getRandomInt(max) {
 
 
 app.get('/facts', (req, res) => {
-    ref.once("value", function(snapshot) {
+    ref.once("value", function (snapshot) {
         let i = getRandomInt(19);
         var data = snapshot.val()[i]
         console.log(i);
