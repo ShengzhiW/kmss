@@ -12,6 +12,7 @@
           </div>
         </div>
         <div class="tweets">
+          <div class="live-update"><img style="width:20px; margin-right:20px" src="/images/loading.gif">Updating Tweets Automatically...</div>
           <div id="live-tweets">
           </div>
           <br>
@@ -39,6 +40,13 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
+      var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+      function linkify(text) {
+          var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+          return text.replace(urlRegex, function(url) {
+              return '<a href="' + url + '">' + url + '</a>';
+          });
+      }
       setInterval( function(){
             console.log("getting tweets");
             $.ajax({
@@ -47,7 +55,11 @@
                 data: 'json',
                 success: function(html){
                    console.log(html);
-                   $("#live-tweets").html(html);
+                   $("#live-tweets").html("");
+                  for (const tweet of html) {
+                    console.log(tweet);
+                    $("#live-tweets").append('<div class="tweet-ind">'+linkify(tweet)+'</div>');
+                  }
                 },
                 error: function (request, status, error) {
                   console.log(request.responseText);
