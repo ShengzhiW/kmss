@@ -8,7 +8,7 @@
       <img src="/images/profile-picture.png" class="profile-picture" alt="Profile picture">
       <p id="home-city"> <br><br><br> </p>
       <div class="profile-links"> <a onclick="getgeo()">My Location</a></div>
-      <div class="profile-links"><a href="/notifications">Edit Notifications</a></div>
+      <div class="profile-links"><a id="notif">Edit Notifications</a></div>
     </div>
     <div class="container-custom nav-gap">
       <div class="container-custom-1">
@@ -49,6 +49,20 @@
                console.log(html)
                // alert(html);
             }
+        });
+      });
+
+      $( "#notif" ).click(function() {
+        Notification.requestPermission().then(function(result) {
+          if (result === 'denied') {
+            console.log('Permission wasn\'t granted. Allow a retry.');
+            return;
+          }
+          if (result === 'default') {
+            console.log('The permission request was dismissed.');
+            return;
+          }
+          // Do something with the granted permission.
         });
       });
     </script>
