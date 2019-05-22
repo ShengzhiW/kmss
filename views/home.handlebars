@@ -7,7 +7,7 @@
             <h3>My Profile</h3>
             <img src="/images/profile-picture.png" class="profile-picture" alt="Profile picture">
             <p id="home-city"> <br><br><br> </p>
-            <div class="profile-links"> <a onclick="getgeo()">My Location</a></div>
+            <div class="profile-links" onclick="getgeo()"> <a>My Location</a></div>
             <div class="profile-links"><a href="/notifications">Edit Notifications</a></div>
         </div>
         <div class="container-custom nav-gap">
@@ -50,10 +50,13 @@
             </script>
 
             <script type="text/javascript">
-                  window.cb = function cb(json) {
-          //do what you want with the json
-          $("#home-city").html('Your Location:<br>'+json.address.road + ', ' + json.address.city+'<br>'+json.address.country);
-      }
+              window.cb = function cb(json) {
+                //do what you want with the json
+                if(json.address.road == null)
+                  $("#home-city").html('Your Location:<br>' + json.address.city+'<br>'+json.address.country);
+                else
+                  $("#home-city").html('Your Location:<br>'+json.address.road + ', ' + json.address.city+'<br>'+json.address.country);
+              }
 
               function getgeo() {
                 console.log("getting location...")
@@ -64,9 +67,13 @@
                   console.log(location.coords.accuracy);
 
                   var s = document.createElement('script');
-    s.src = 'https://nominatim.openstreetmap.org/reverse?json_callback=cb&format=json&lat='+location.coords.latitude+'&lon='+location.coords.longitude+'&zoom=27&addressdetails=1';
-    document.getElementsByTagName('head')[0].appendChild(s);
+                  s.src = 'https://nominatim.openstreetmap.org/reverse?json_callback=cb&format=json&lat='+location.coords.latitude+'&lon='+location.coords.longitude+'&zoom=27&addressdetails=1';
+                  document.getElementsByTagName('head')[0].appendChild(s);
+
+                  //Set location cookie
+                  document.cookie = "loc=" + location.coords.latitude + "," + location.coords.longitude;
               });
+
               }
             </script>
     </body>
