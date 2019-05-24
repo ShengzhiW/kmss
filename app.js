@@ -124,6 +124,22 @@ app.get('/tweets', (req, res) => {
     res.send(tweetsArr);
 });
 
+app.post('/checklist', (req, res) => {
+  function updateChecklist(value, status) {
+    var item = {
+      value: id,
+      status: 0
+    };
+
+    var updateItem = firebase.database().ref().child('cheklist').push().key;
+
+    var updates = {};
+    updates['checklist/' + updateItem] = item;
+
+    return firebase.database().ref().update(updates);
+  };
+});
+
 app.listen(3000);
 
 // view engine setup
