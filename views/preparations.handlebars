@@ -115,25 +115,25 @@
                     <div class="col">
                       <h5>Food</h5>
                       <div class="form-check">
-                        <input type="checkbox" value="1" >Ready-to-eat canned meats, fruits, and vegetables<br>
+                        <input type="checkbox" class="form-check-input" value="1" >Ready-to-eat canned meats, fruits, and vegetables<br>
                       </div>
                       <div class="form-check">
-                        <input type="checkbox" value="2" >Canned juices<br>
+                        <input type="checkbox" class="form-check-input" value="2" >Canned juices<br>
                       </div>
                       <div class="form-check">
-                        <input type="checkbox" value="3" >Staples (salt, sugar, pepper, spices, etc.)<br>
+                        <input type="checkbox" class="form-check-input" value="3" >Staples (salt, sugar, pepper, spices, etc.)<br>
                       </div>
                       <div class="form-check">
-                        <input type="checkbox" value="4" >High energy foods<br>
+                        <input type="checkbox" class="form-check-input" value="4" >High energy foods<br>
                       </div>
                       <div class="form-check">
-                        <input type="checkbox" value="5" >Vitamins<br>
+                        <input type="checkbox" class="form-check-input" value="5" >Vitamins<br>
                       </div>
                       <div class="form-check">
-                        <input type="checkbox" value="6" >Food for infantss<br>
+                        <input type="checkbox" class="form-check-input" value="6" >Food for infantss<br>
                       </div>
                       <div class="form-check">
-                        <input type="checkbox" value="7" >Comfort/stress foods<br>
+                        <input type="checkbox" class="form-check-input" value="7" >Comfort/stress foods<br>
                       </div>
                       <!-- <div class="form-check">
                         <input type="checkbox" class="form-check-input" id="materialUnchecked">
@@ -404,11 +404,17 @@
     </div>
 
     <script type="text/javascript">
-    var checklistArr = { 'items[]' : []};
-    $(":checked").each(function() {
-      checklistArr['items[]'].push($(this).val());
+
+    $(".form-check-input").change(function(){
+      var checklistArr = { 'items[]' : []};
+      $(":checked").each(function() {
+        checklistArr['items[]'].push($(this).val());
+        console.log('pushed: '+ $(this).val())
+      });
+      // $.post("/checklist", checklistArr);
     });
-    $.post("/checklist", checklistArr);
+
+
     </script>
 
 
