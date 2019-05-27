@@ -124,6 +124,15 @@ app.get('/tweets', (req, res) => {
     res.send(tweetsArr);
 });
 
+app.get('/buildchecklist', (req, res) => {
+  db.ref('checklist').once("value", function (snapshot) {
+      var data = snapshot.val()
+      console.log(data);
+      res.send(data)
+    });
+});
+
+
 app.post('/checklist', (req, res) => {
   function updateChecklist(value, status) {
     var item = {
