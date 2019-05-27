@@ -8,7 +8,9 @@ body{
     background: #f2f2f2;
 }
 
-
+.hidden {
+    visibility: hidden;
+}
 
 input:focus,
 select:focus,
@@ -75,9 +77,13 @@ twitter-widget{
     width: 100vw;
     z-index: 1000000;
     background-color: rgba(0, 0, 0,.9);
-   
+    color: white !important;
     padding-left: 0!important;
     -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    color: white !important;
 }
 
 .navbar-nav .navbar-center {
@@ -89,14 +95,14 @@ twitter-widget{
 .nav-item{
     text-align: center;
     font-size: 1.2em;
-    color: white !important;
+    
 }
 
 .navbar-brand{
     width: 200px;
     text-align: center;
     margin-right: 10px;
-    color: white !important;
+    
 }
 
 .nav-gap{
@@ -174,6 +180,7 @@ iframe {
     width: 100%;
     height: 200px;
     transition: background-color 1s ease;
+    border: none !important;
 }
 
 .dark:hover {
