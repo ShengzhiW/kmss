@@ -203,11 +203,14 @@ iframe {
     width: calc(100vw - 205px);
     min-height: 100vh;
     /* background-color: #F5F5F5; */
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../images/home-bg.jpg");
-    background-size: cover;
     display: inline-block;
     vertical-align: top;
     margin-left: 200px;
+}
+
+.hurr-bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../images/home-bg.jpg");
+    background-size: cover;
 }
 
 .container-custom-1{
