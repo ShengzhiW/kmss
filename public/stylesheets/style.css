@@ -32,10 +32,10 @@ button:focus {
 
 .headings {
     font-size: 36px;
-    color: rgb(104, 104, 104);
+    color: whitesmoke;
     padding: 40px 0px;
     letter-spacing: 2.5px;
-    text-shadow: 2px 2px 5px white;
+    /* text-shadow: 2px 2px 5px white; */
     font-family: 'Oswald', sans-serif;
 }
 
@@ -335,6 +335,7 @@ iframe {
 #new-fact:hover{
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
     transition: box-shadow .4s;
+    
 }
 
 
