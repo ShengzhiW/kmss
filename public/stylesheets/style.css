@@ -74,7 +74,8 @@ twitter-widget{
     float: left;
     width: 100vw;
     z-index: 1000000;
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(0, 0, 0,.9);
+   
     padding-left: 0!important;
     -webkit-backdrop-filter: blur(10px);
 }
@@ -88,12 +89,14 @@ twitter-widget{
 .nav-item{
     text-align: center;
     font-size: 1.2em;
+    color: white !important;
 }
 
 .navbar-brand{
     width: 200px;
     text-align: center;
     margin-right: 10px;
+    color: white !important;
 }
 
 .nav-gap{
@@ -113,14 +116,24 @@ iframe {
 }
 
 .accordion {
-    width: 100%;
+    width: 600px;
+    margin: 0 auto;
+    border: 0 !important;
+    overflow: hidden!important;
 }
 
 .card-body {
-    background: white;
+    background: rgb(78, 78, 78);
+    
 }
 
-
+.card {
+    margin-bottom: 20px;
+    overflow: hidden!important;
+    border-radius: 10px !important;
+    border:0!important;
+    
+}
 
 .card-header button {
     font-size: 22px;
@@ -154,7 +167,7 @@ iframe {
 }
 
 .dark {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     position: absolute;
     top: 0;
     left:0;
@@ -164,7 +177,7 @@ iframe {
 }
 
 .dark:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0);
     transition: background-color 1s ease;
 }
 
@@ -211,6 +224,10 @@ iframe {
 .hurr-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../images/home-bg.jpg");
     background-size: cover;
+}
+
+.grey-bg {
+    background: rgb(10, 10, 10);
 }
 
 .container-custom-1{
