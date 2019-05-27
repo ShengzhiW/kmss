@@ -124,22 +124,15 @@ iframe {
 .accordion {
     width: 600px;
     margin: 0 auto;
-    border: 0 !important;
-    overflow: hidden!important;
+
 }
 
 .card-body {
     background: rgb(78, 78, 78);
-    
+    color: whitesmoke;
 }
 
-.card {
-    margin-bottom: 20px;
-    overflow: hidden!important;
-    border-radius: 10px !important;
-    border:0!important;
-    
-}
+
 
 .card-header button {
     font-size: 22px;
@@ -180,7 +173,7 @@ iframe {
     width: 100%;
     height: 200px;
     transition: background-color 1s ease;
-    border: none !important;
+    
 }
 
 .dark:hover {
@@ -194,6 +187,7 @@ iframe {
 
     background-size: 100%;
     transition: background-image 1s, background-size 1s;
+    
     
 }
 
@@ -505,4 +499,12 @@ iframe {
 
 .tweet-ind a{
   color: #18C0FF
+}
+
+.card {
+    border: 0 !important;
+    border-radius: 10px !important;
+    background: black;
+    margin-bottom: 20px;
+    overflow: hidden!important;
 }
