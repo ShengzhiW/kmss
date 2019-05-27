@@ -8,7 +8,9 @@ body{
     background: #f2f2f2;
 }
 
-
+.hidden {
+    visibility: hidden;
+}
 
 input:focus,
 select:focus,
@@ -30,10 +32,10 @@ button:focus {
 
 .headings {
     font-size: 36px;
-    color: rgb(104, 104, 104);
+    color: whitesmoke;
     padding: 40px 0px;
     letter-spacing: 2.5px;
-    text-shadow: 2px 2px 5px white;
+    /* text-shadow: 2px 2px 5px white; */
     font-family: 'Oswald', sans-serif;
 }
 
@@ -74,9 +76,14 @@ twitter-widget{
     float: left;
     width: 100vw;
     z-index: 1000000;
-    background-color: rgba(255,255,255,.9);
+    background-color: rgba(0, 0, 0,.9);
+    color: white !important;
     padding-left: 0!important;
     -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar a {
+    color: white !important;
 }
 
 .navbar-nav .navbar-center {
@@ -88,12 +95,14 @@ twitter-widget{
 .nav-item{
     text-align: center;
     font-size: 1.2em;
+    
 }
 
 .navbar-brand{
     width: 200px;
     text-align: center;
     margin-right: 10px;
+    
 }
 
 .nav-gap{
@@ -113,11 +122,14 @@ iframe {
 }
 
 .accordion {
-    width: 100%;
+    width: 600px;
+    margin: 0 auto;
+
 }
 
 .card-body {
-    background: white;
+    background: rgb(78, 78, 78);
+    color: whitesmoke;
 }
 
 
@@ -154,17 +166,18 @@ iframe {
 }
 
 .dark {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
     position: absolute;
     top: 0;
     left:0;
     width: 100%;
     height: 200px;
     transition: background-color 1s ease;
+    
 }
 
 .dark:hover {
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0);
     transition: background-color 1s ease;
 }
 
@@ -174,6 +187,7 @@ iframe {
 
     background-size: 100%;
     transition: background-image 1s, background-size 1s;
+    
     
 }
 
@@ -211,6 +225,10 @@ iframe {
 .hurr-bg {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("../images/home-bg.jpg");
     background-size: cover;
+}
+
+.grey-bg {
+    background: rgb(10, 10, 10);
 }
 
 .container-custom-1{
@@ -311,6 +329,7 @@ iframe {
 #new-fact:hover{
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.35);
     transition: box-shadow .4s;
+    
 }
 
 
@@ -480,4 +499,12 @@ iframe {
 
 .tweet-ind a{
   color: #18C0FF
+}
+
+.card {
+    border: 0 !important;
+    border-radius: 10px !important;
+    background: black;
+    margin-bottom: 20px;
+    overflow: hidden!important;
 }
