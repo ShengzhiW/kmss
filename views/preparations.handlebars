@@ -119,6 +119,7 @@
                     <div class="col">
                       <h5>Food</h5>
                       <div id="food-list">
+                        <p>Store at least a three-day supply of non-perishable food. Select foods that require no refrigeration, preparation or cooking, and little or no water. If you must heat food, pack a can of Sterno. Select food items that are compact and lightweight. Include a selection of the following foods in your Disaster Supplies Kit:</p>
                       </div>
                     </div>
                     <div class="col">
@@ -130,6 +131,7 @@
                 </div>
               </div>
             </div>
+
 
             <div class="card">
               <div class="card-header" id="headingFive" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
@@ -147,7 +149,7 @@
                     <div class="col">
                       <h5>First Aid Kit</h5>
                       <div id="kit-list">
-
+                        <p>Assemble a first aid kit for your home and one for each car.</p>
                       </div>
                     </div>
                     <div class="col">
@@ -155,11 +157,13 @@
                       <div id="drugs-list">
 
                       </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+
+
             <div class="card">
               <div class="card-header" id="headingSix" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                 <div class="dark">
@@ -174,8 +178,108 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="col">
-                      <h5>First Aid Kit</h5>
-                      <div id="aid-list">
+                      <div id="tools-list">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card-header" id="headingSeven" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                <div class="dark">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed">
+                    Sanitation, Clothing &amp; Bedding
+                    </button>
+                  </h5>
+                </div>
+              </div>
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5>Sanitation</h5>
+                      <div id="sanitation-list">
+
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h5>Clothing &amp; Bedding</h5>
+                      <div id="clothing-list">
+                        <p>Include at least one complete change of clothing and footwear per person.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card-header" id="headingEight" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                <div class="dark">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed">
+                    Special Items
+                    </button>
+                  </h5>
+                </div>
+              </div>
+              <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5>For Baby</h5>
+                      <div id="baby-list">
+
+                      </div>
+                      <h5>For Adults</h5>
+                      <div id="adults-list">
+
+                      </div>
+                      <h5>For Entertainment</h5>
+                      <div id="entertain-list">
+
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h5>For Pets</h5>
+                      <div id="pets-list">
+                        <p>In the interest of protecting pets, the Humane Society of the United States offers these tips for inclusion in your family disaster plan:</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="card-header" id="headingNine" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                <div class="dark">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed">
+                    Possessions &amp; Documents
+                    </button>
+                  </h5>
+                </div>
+              </div>
+              <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample2">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col">
+                      <h5>**Keep in waterproof, portable container**</h5>
+                      <div id="docs-list">
+
+                      </div>
+                    </div>
+                    <div class="col">
+                      <h5>Other Possessions</h5>
+                      <div id="possess-list">
 
                       </div>
                     </div>
@@ -225,7 +329,31 @@
                  $("#drugs-list").append(newhtml)
                }
                else if (i<52) {
-                 $("#aid-list").append(newhtml)
+                 $("#tools-list").append(newhtml)
+               }
+               else if (i<60) {
+                 $("#sanitation-list").append(newhtml)
+               }
+               else if (i<66) {
+                 $("#clothing-list").append(newhtml)
+               }
+               else if (i<71) {
+                 $("#baby-list").append(newhtml)
+               }
+               else if (i<77) {
+                 $("#adults-list").append(newhtml)
+               }
+               else if (i<78) {
+                 $("#entertain-list").append(newhtml)
+               }
+               else if (i<86) {
+                 $("#pets-list").append(newhtml)
+               }
+               else if (i<90) {
+                 $("#docs-list").append(newhtml)
+               }
+               else if (i<98) {
+                 $("#possess-list").append(newhtml)
                }
                console.log(newhtml)
 
