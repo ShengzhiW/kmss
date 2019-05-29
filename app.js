@@ -35,7 +35,7 @@ function grabHurricaneSeasonTweets() {
 
 function gotData(err, data, respon) {
     let tweets = data.statuses;
-    console.log("new");
+    console.log("Getting tweets...");
 
     tweetsArr = [];
     if (tweets) {
@@ -45,7 +45,7 @@ function gotData(err, data, respon) {
             tweetsArr.push(items.text);
         })
     } else {
-        console.log("no tweets");
+        console.log("No Tweets :(");
     }
 
     console.log(tweetsArr);
