@@ -140,7 +140,7 @@ app.post('/checklist', (req, res) => {
       status: 0
     };
 
-    var updateItem = firebase.database().ref().child('cheklist').push().key;
+    var updateItem = firebase.database().ref().child('checklist').child('status').push().key;
 
     var updates = {};
     updates['checklist/' + updateItem] = item;
