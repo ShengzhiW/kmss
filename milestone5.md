@@ -4,6 +4,23 @@ Mark (user) and his family have just moved to Florida from California. He has no
 
 # Screenshots of latest UI skeleton webpages
 
+### Login Page
+![Image of Login Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone5/0.png)
+
+### Home Page
+![Image of Home Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone5/1.png)
+
+### Preparations Page
+![Image of Preparations Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone5/2.png)
+
+### Hurricane Map Page
+![Image of Hurricane Map Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone5/3.png)
+
+### Trending Page
+
+### Shelters Page
+
+
 # How UI Skeleton has improved
 
 We have changed all of the pages to reflect a dark mode. This matches the home page's dark theme and helps the rest of the important information stand out. We added a Shelters page that now gives information on nearby shelters available based on the user's location. Our Preparations page now contains more information regarding the checklist. It saves the user's input regarding what they have and have not checked. We also improved the overall look of each card, removing the white border and adding curved edges, in order to separate each section more clearly. We added some loading animation to some pages to show feedback to users. Clicking on "Set My Location" now prompts you with a loading button. Incoming tweets in the Trending page now have an incoming animation, to show users that it is live information.
