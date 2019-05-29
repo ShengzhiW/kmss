@@ -126,6 +126,15 @@ app.get('/tweets', (req, res) => {
     res.send(tweetsArr);
 });
 
+app.get('/buildchecklist', (req, res) => {
+  db.ref('checklist').once("value", function (snapshot) {
+      var data = snapshot.val()
+      console.log(data);
+      res.send(data)
+    });
+});
+
+
 app.post('/checklist', (req, res) => {
   function updateChecklist(value, status) {
     var item = {
@@ -133,7 +142,7 @@ app.post('/checklist', (req, res) => {
       status: 0
     };
 
-    var updateItem = firebase.database().ref().child('cheklist').push().key;
+    var updateItem = firebase.database().ref().child('checklist').child('status').push().key;
 
     var updates = {};
     updates['checklist/' + updateItem] = item;

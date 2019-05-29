@@ -6,11 +6,15 @@
     <div class="profile-bar">
       <h3>My Profile</h3>
       <img src="/images/profile-picture.png" class="profile-picture" alt="Profile picture">
-      <p id="home-city"> <br><br><br> </p>
+      <p id="home-city"> 
+        <img id="location-loading" class="hidden center" style="width:20px; margin-right:20px" src="/images/loading.gif">
+        <br><br><br> 
+      
+      </p>
       <div class="profile-links"> <a onclick="getgeo()">Set My Location</a></div>
       <div class="profile-links"><a id="notif">Allow Notifications</a></div>
     </div>
-    <div class="container-custom nav-gap">
+    <div class="container-custom hurr-bg nav-gap">
       <div class="container-custom-1">
         <div class="row animated fadeIn slow">
           <div class="col-xs-12">
@@ -73,6 +77,8 @@
       }
 
       function getgeo() {
+        
+      $("#location-loading").toggleClass('hidden');
       console.log("getting location...")
       navigator.geolocation.getCurrentPosition(function(location) {
 
