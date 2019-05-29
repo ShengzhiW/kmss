@@ -395,7 +395,7 @@ iframe {
 
 
 .profile-bar{
-    background-color: white;
+    background-color: black;
     background-image: url(../images/sidebar.jpg);
     background-size: cover;
     position: fixed;
