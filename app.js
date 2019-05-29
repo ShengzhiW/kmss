@@ -87,6 +87,7 @@ var home = require('./routes/home');
 var maps = require('./routes/maps');
 var preparations = require('./routes/preparations');
 var trending = require('./routes/trending');
+var shelters = require('./routes/shelters');
 
 
 var app = express();
@@ -104,6 +105,7 @@ app.get('/home', home.view);
 app.get('/maps', maps.view);
 app.get('/preparations', preparations.view);
 app.get('/trending', trending.view);
+app.get('/shelters', shelters.view);
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
