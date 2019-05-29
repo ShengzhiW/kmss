@@ -27,7 +27,15 @@ Mark (user) and his family have just moved to Florida from California. He has no
 We have changed all of the pages to reflect a dark mode. This matches the home page's dark theme and helps the rest of the important information stand out. We added a Shelters page that now gives information on nearby shelters available based on the user's location. Our Preparations page now contains more information regarding the checklist. It saves the user's input regarding what they have and have not checked. We also improved the overall look of each card, removing the white border and adding curved edges, in order to separate each section more clearly. We added some loading animation to some pages to show feedback to users. Clicking on "Set My Location" now prompts you with a loading button. Incoming tweets in the Trending page now have an incoming animation, to show users that it is live information.
 
 # Screenshots of how data is displayed/visualized
+![Image of Data Visualization](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone5/7.png)
 
 # How data display/visualization was implemented
 
+That data we used was all public shelter stations throughout the US. First, we pull the user's longitude and latitude and send that data to Google's API Geocoding to reverse the longitude and latitude's
+information to grab the state of the current user. Then we use Google's API Maps Javascript to render a map at the user's location. Based on the user's state, we parse through the JSON data set of all
+shelter locations and only displays the ones in the same state.
+
 # Ambitious data display/visualization ideas
+
+One of our goals is to allow the user to save shelter locations on our shelters page. This will allow users to more easily plan their route in a case of an emergency. Additionally, we also plan to
+display freeway routes that should be taken in case of an emergency.
