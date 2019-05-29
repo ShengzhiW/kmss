@@ -17,9 +17,10 @@ Mark (user) and his family have just moved to Florida from California. He has no
 ![Image of Hurricane Map Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone5/3.png)
 
 ### Trending Page
-
+![Image of Trending Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone5/4.png)
 ### Shelters Page
-
+![Image 1 of Shelters Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone5/5.png)
+![Image 2 of Shelters Page](https://raw.githubusercontent.com/ShengzhiW/kmss/master/milestone5/6.png)
 
 # How UI Skeleton has improved
 
