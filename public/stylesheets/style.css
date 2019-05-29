@@ -509,3 +509,7 @@ iframe {
     margin-bottom: 20px;
     overflow: hidden!important;
 }
+
+.card-header:hover {
+    cursor: pointer;
+}
