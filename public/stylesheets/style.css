@@ -42,6 +42,7 @@ button:focus {
 #headings-trending {
     padding-top: 60px !important;
     padding-bottom: 20px !important;
+    color: grey !important;
 }
 
 .center {
