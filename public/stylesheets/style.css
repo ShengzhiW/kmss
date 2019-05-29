@@ -513,19 +513,26 @@ iframe {
   margin-top: 20px;
   padding: 20px;
   border-radius: 10px;
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation: 1s ease-out 0s 1 slideInFromTop;
   background: #333;
   padding: 30px;
 }
 
-@keyframes slideInFromLeft {
+@keyframes slideInFromTop {
   0% {
-    transform: translateY(-10%);
+    transform: translateY(-60%);
     opacity: 0;
   }
+
+
+  80% {
+    transform: translateY(-92%);
+    opacity: 0;
+  }
+
   100% {
     transform: translateX(0);
-    opacity: 100;
+    opacity: 1;
   }
 }
 
