@@ -503,6 +503,10 @@ iframe {
   margin-right: auto;
 }
 
+.live-tweets-height{
+  height: 600px;
+}
+
 .tweet-ind{
   background-color: #323232;
   color: white;
@@ -520,18 +524,18 @@ iframe {
 
 @keyframes slideInFromTop {
   0% {
-    transform: translateY(-60%);
+    /* transform: translateY(-60%); */
     opacity: 0;
   }
 
 
   80% {
-    transform: translateY(-92%);
+    /* transform: translateY(-92%); */
     opacity: 0;
   }
 
   100% {
-    transform: translateX(0);
+    /* transform: translateX(0); */
     opacity: 1;
   }
 }
