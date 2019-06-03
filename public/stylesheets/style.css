@@ -392,6 +392,7 @@ iframe {
 
 #home-city{
     text-align: center;
+    color: white;
 }
 
 
@@ -609,4 +610,18 @@ iframe {
 
 .lakjl{
   padding: 20px;
+}
+
+.location-reminder{
+  width: 500px;
+  height: 220px;
+  position: fixed;
+  background-color: gray;
+  color: white;
+  left: calc(50vw - 250px);
+  top: 40vh;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
 }

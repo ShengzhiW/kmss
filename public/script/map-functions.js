@@ -122,4 +122,7 @@ function displayShelter(coords, map, name, address, state, zip, telephone) {
 	marker.addListener('click', function () {
 		infowindow.open(map, marker);
 	});
+
+	// remove reminder class
+	$(".location-reminder").remove();
 }
