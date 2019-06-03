@@ -1,7 +1,7 @@
 /* This file defines how the profile picture can be changed and saved 
-* in the database. It will also tell the webpage to load an already 
-* saved profile picture from the database upon load.
-*/
+ * in the database. It will also tell the webpage to load an already 
+ * saved profile picture from the database upon load.
+ */
 
 
 // function to read the image uploaded and submit a post request to save
