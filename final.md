@@ -42,6 +42,7 @@
 3. [maps.handlebars](views/maps.handlebars)
 4. [preparations.handlebars](views/preparations.handlebars)
 5. [shelters.handlebars](views/shelters.handlebars)
+    * Contains the HTML elements of the shelters page on the web application. It uses Google Map APIs to show the locations of shelters near your location. The data is pulled from a JSON file hosted by the Department of Homeland Security and displayed on an interactive map.
 6. [trending.handlebars](views/trending.handlebars)
 7. [head-hc.handlebars](views/partials/head-hc.handlebars)
 8. [nav-hc.handlebars](views/partials/nav-hc.handlebars)
