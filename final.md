@@ -36,6 +36,8 @@
       * Contains Google and Twitter API keys that is used in App.js. This file is ignored from github for security purposes. If you'd like the Twitter API keys that were used, please contact Kenny Luc.
 11. [facts-functions.js](public/script/facts-functions.js)
       * Sets the location of the user using and gets the location based on the longitude and latitude. It can also performa a get request to get a new hurricane fact.
+11. [prep-functions.js](public/script/prep-functions.js)
+      * Populates the checkboxes in preparations.handlebars using the data from the firebase database. It also watches for any changes in checkbox states and will save firebase if any checkboxes are changed.
 
 ## (.handlebars) Files
 1. [home.handlebars](views/home.handlebars)
