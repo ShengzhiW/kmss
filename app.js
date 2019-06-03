@@ -146,7 +146,7 @@ app.post('/checklist', (req, res) => {
         // console.log(statusArr[i])
         checklistRef.update(updates);
     }
-    // 
+    //
 
     // var checklistRef
   // function updateChecklist(value, status) {
