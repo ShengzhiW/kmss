@@ -6,8 +6,8 @@
 * [Shengzhi Wang](https://github.com/ShengzhiW)<br />
 
 * [Kenny Luc](https://github.com/kennyyluc)<br />
-1. Added Twitter API functionality that pulls live tweets from twitter containing informaiton about hurricanes.
-2. Added Google Map APIs functionality to pull real world data about emergency shelter locations publicly accessibly to everyone. This is then displayed on a map with its location and telephone number.
+    * Added Twitter API functionality that pulls live tweets from twitter containing informaiton about hurricanes.
+    * Added Google Map APIs functionality to pull real world data about emergency shelter locations publicly accessibly to everyone. This is then displayed on a map with its location and telephone number.
 
 # Code Functionality 
 ## (.js) Files
