@@ -15,7 +15,7 @@
 # Code Functionality 
 ## (.js) Files
 1. [app.js](app.js)
-      * This file is what is run to start our application. It connects our Firebase database, our Twitter API, and node package modules that is used in our handlebar files. Additionally, it connects our pages together so that they can be navigated from the navigation bar. 
+      * This file is what is run to start our application. It connects our Firebase database, our Twitter API, and node package modules that is used in our handlebar files. Additionally, it connects our pages together so that they can be navigated from the navigation bar. This file also processes the get and post requested needed to perform ajax actions. 
 2. [home.js](routes/home.js)
       * renders the home.handlebars page when the home page is requested by app.js
 3. [login.js](routes/login.js)
