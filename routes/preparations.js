@@ -1,4 +1,3 @@
-
 // This files renders the preparations.handlebars page when the 
 // preparations page is requested by app.js
 
