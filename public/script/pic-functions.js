@@ -14,17 +14,18 @@ function readURL(input) {
 
 };
 
-$(document).ready(function({
-  picBase = "";
+$(document).ready(function(){
+  picBase=""
   $.ajax({
     type: "GET",
     url: "/newpic",
     data: 'json',
     success: function (image) {
-      picBase = JSON.stringify(image);
-      // $("#profpic").attr("src", )
+      picBase = image["profpic"];
+      $("#profpic").attr("src", picBase)
       console.log(picBase)
     }
   });
-  $("#profpic").attr("src", picBase)
+
+
 });

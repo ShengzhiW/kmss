@@ -127,15 +127,10 @@ app.post('/checklist', (req, res) => {
 });
 
 app.post('/profpic', (req, res) => {
-<<<<<<< HEAD
   var update = {};
   update['profpic'] = req.body['pic[]'];
   picRef.update(update)
 });
-=======
-  console.log((req.body));
-})
->>>>>>> 2c8c0816afa8d10e24145cdbbb80a3c9719df74d
 
 app.listen(3000);
 module.exports = app;
