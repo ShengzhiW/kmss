@@ -36,7 +36,7 @@ function geocode(lat, lng, map) {
 	axios.get('https://maps.googleapis.com/maps/api/geocode/json?latlng=' + lat + ',' + lng + '&key=AIzaSyCniRIC-EiUZie2ot9d7nOhbT3iXNr2dT4')
 		.then(function (reponse) {
 			//console.log(reponse.data.results[0].address_components[5].short_name)
-			getShelters(reponse.data.results[0].address_components[5].short_name, map);
+			getShelters('FL', map);
 		})
 		.catch(function (error) {
 			console.log(error);
