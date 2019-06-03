@@ -8,7 +8,6 @@ $("#new-fact").click(function () {
       $("#hur-fact").hide().html(html).fadeIn();
 
       console.log(html)
-      // alert(html);
     }
   });
 });
