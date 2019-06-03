@@ -13,20 +13,6 @@ $("#new-fact").click(function () {
   });
 });
 
-$("#notif").click(function () {
-  Notification.requestPermission().then(function (result) {
-    if (result === 'denied') {
-      console.log('Permission wasn\'t granted. Allow a retry.');
-      return;
-    }
-    if (result === 'default') {
-      console.log('The permission request was dismissed.');
-      return;
-    }
-    // Do something with the granted permission.
-  });
-});
-
 window.cb = function cb(json) {
   //do what you want with the json
   $("#home-city").html('Your Location:<br>' + json.address.road + ', ' + json.address.city + '<br>' + json.address.country);

@@ -34,7 +34,8 @@
       * Reqests fresh tweets automatically at time intervals to reload into the page with animation.
 10. *config.js
       * Contains Google and Twitter API keys that is used in App.js. This file is ignored from github for security purposes. If you'd like the Twitter API keys that were used, please contact Kenny Luc.
-
+11. [facts-functions.js](public/script/facts-functions.js)
+      * Sets the location of the user using and gets the location based on the longitude and latitude. It can also performa a get request to get a new hurricane fact.
 
 ## (.handlebars) Files
 1. [home.handlebars](views/home.handlebars)
