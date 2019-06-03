@@ -1,6 +1,10 @@
 # Team Member Contributions
 * [Sierra Gutierrez](https://github.com/sierracaitlin)<br />
-
+   * Worked on storyboards and wireframes
+   * Implemented details and added CSS on the Preparations page
+   * Worked on checklist by adding all the items on firebase
+   * Added early Twitter UI/animations
+   * Updated overall look and feel of the app by implementing dark mode to all pages
 * [Marjorie Tolentino](https://github.com/marj-nt)<br />
 
 * [Shengzhi Wang](https://github.com/ShengzhiW)<br />
@@ -41,6 +45,7 @@
 
 ## (.handlebars) Files
 1. [home.handlebars](views/home.handlebars)
+   * Contains the HTML elements of the Home page of the application. It contains a "Random Hurricane Fact" button that uses AJAX to
 2. [login.handlebars](views/login.handlebars)
 3. [maps.handlebars](views/maps.handlebars)
 4. [preparations.handlebars](views/preparations.handlebars)
