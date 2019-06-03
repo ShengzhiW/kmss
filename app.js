@@ -1,9 +1,9 @@
-// File: app.js
-//
-// This file is what is run to start our application. It connects our Firebase database, our Twitter API,
-// and node package modules that is used in our handlebar files. Additionally, it connects our pages together
-// so that they can be navigated from the navigation bar. This file also processes the get and post requested
-// needed to perform ajax actions.
+/* 
+ * This file is what is run to start our application. It connects our Firebase database, our Twitter API,
+ * and node package modules that is used in our handlebar files. Additionally, it connects our pages together
+ * so that they can be navigated from the navigation bar. This file also processes the get and post requested
+ * needed to perform ajax actions.
+ */
 
 
 // initialize the required packages
