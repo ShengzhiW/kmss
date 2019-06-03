@@ -111,37 +111,6 @@ app.get('/buildchecklist', (req, res) => {
 });
 
 app.post('/checklist', (req, res) => {
-<<<<<<< HEAD
-    statusArr = req.body['items[]'];
-    for (var i = 0; i < statusArr.length; i++) {
-        var item = {
-            id: i,
-            aa: 'aaa',
-            status: statusArr[i]
-        };
-        var updates = {};
-        updates[item.id+'/status'] = item.status;
-
-        // console.log(statusArr[i])
-        checklistRef.update(updates);
-    }
-    //
-
-    // var checklistRef
-  // function updateChecklist(value, status) {
-  //   var item = {
-  //     value: id,
-  //     status: 0
-  //   };
-
-  //   var updateItem = firebase.database().ref().child('checklist').push().key;
-
-  //   var updates = {};
-  //   updates['checklist/' + updateItem + '/status'] = item;
-
-  //   return firebase.database().ref().update(updates);
-  // };
-=======
   statusArr = req.body['items[]'];
   for (var i = 0; i < statusArr.length; i++) {
     var item = {
@@ -153,7 +122,6 @@ app.post('/checklist', (req, res) => {
     updates[item.id + '/status'] = item.status;
     checklistRef.update(updates);
   }
->>>>>>> 0e3eee0808094a9377ea1c4f09064dd3849093ef
 });
 
 app.listen(3000);
