@@ -12,7 +12,7 @@ $("#new-fact").click(function () {
     }
   });
 });
-
+ 
 window.cb = function cb(json) {
   //do what you want with the json
   $("#home-city").html('Your Location:<br>' + json.address.road + ', ' + json.address.city + '<br>' + json.address.country);
