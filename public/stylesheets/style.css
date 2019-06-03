@@ -456,12 +456,14 @@ iframe {
     cursor: pointer;
 }
 
-
-
 .profile-links a:hover{
     color: white;
     text-decoration: none;
 
+}
+
+#fileinput{
+  visibility: hidden; 
 }
 
 .page-body{

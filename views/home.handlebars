@@ -9,12 +9,15 @@
     <div class="profile-bar">
       <h3>My Profile</h3>
       <img src="/images/profile-picture.png" class="profile-picture" alt="Profile picture">
-      <p id="home-city"> 
+      <p id="home-city">
         <img id="location-loading" class="hidden center" style="width:20px; margin-right:20px" src="/images/loading.gif">
-        <br><br><br> 
+        <br><br><br>
       </p>
+      <div class="profile-links">
+        <label for="fileinput">Change Profile Picture</label>
+        <input id="fileinput" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);" />
+      </div>
       <div class="profile-links"> <a onclick="getgeo()">Set My Location</a></div>
-      <div class="profile-links"><a id="notif">Allow Notifications</a></div>
     </div>
     <div class="container-custom hurr-bg nav-gap">
       <div class="container-custom-1">
@@ -43,5 +46,6 @@
       </div>
     </div>
     <script src="/script/facts-functions.js"></script>
+    <script src="/script/pic-functions.js"></script>
   </body>
 </html>

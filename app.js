@@ -6,16 +6,16 @@ var logger = require('morgan');
 var exphbs = require('express-handlebars');
 var firebase = require("firebase-admin");
 var fs = require('fs');
-var config = require('./config');
+// var config = require('./config');
 var Twit = require('twit')
-var T = new Twit({
-  consumer_key: config.consumer_key,
-  consumer_secret: config.consumer_secret,
-  access_token: config.access_token,
-  access_token_secret: config.access_token_secret,
-  timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
-  strictSSL: true, // optional - requires SSL certificates to be valid.
-});
+// var T = new Twit({
+//   consumer_key: config.consumer_key,
+//   consumer_secret: config.consumer_secret,
+//   access_token: config.access_token,
+//   access_token_secret: config.access_token_secret,
+//   timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
+//   strictSSL: true, // optional - requires SSL certificates to be valid.
+// });
 var tweetsArr = [];
 function grabHurricaneSeasonTweets() {
   var params = {
@@ -53,6 +53,7 @@ firebase.initializeApp({
 var db = firebase.database();
 var factsRef = db.ref("hurricane-facts");
 var checklistRef = db.ref("checklist");
+var picRef = db.ref("profile-pic");
 var login = require('./routes/login');
 var home = require('./routes/home');
 var maps = require('./routes/maps');
@@ -72,7 +73,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({
   extended: false
 }))
-app.use(bodyParser.json())
+app.use(bodyParser.json({limit: '50mb'}));
+app.use(express.json({limit:'50mb'}));
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -119,6 +122,11 @@ app.post('/checklist', (req, res) => {
     checklistRef.update(updates);
   }
 });
+
+app.post('/profpic', (req, res) => {
+
+  console.log(req.body);
+})
 
 app.listen(3000);
 module.exports = app;
