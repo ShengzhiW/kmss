@@ -1,8 +1,7 @@
-/* File: facts-functions.js
-*
-* This file manages how the a new fact is laoded and how the user's location is
-* recorded in local storage and displayed.
-*/
+/*
+ * This file manages how the a new fact is laoded and how the user's location is
+ * recorded in local storage and displayed.
+ */
 
 /* functions that gets a new random fact when the user clicks
 * on the appropriate button. It uses a get request to get
