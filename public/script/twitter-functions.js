@@ -3,7 +3,7 @@
  * and display it on the page.
 */
 
-// Parases the link from the text and wraps it all inside an <a> tag
+// Parses the link from the text and wraps it all inside an <a> tag
 var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
       function linkify(text) {
           var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
