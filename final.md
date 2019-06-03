@@ -18,8 +18,8 @@
 5. [preparations.js](routes/preparations.js)
 6. [shelters.js](routes/shelters.js)
 7. [trending.js](routes/trending.js)
-8. [map_functions.js](public/script/map.js)
-9. [twitter_functions.js](public/script/twitter.js)
+8. [map-functions.js](public/script/map-functions.js)
+9. [twitter-functions.js](public/script/twitter-functions.js)
 10. *config.js
       * Contains Twitter API keys that is used in App.js. This file is ignored from github for security purposes. If you'd like the Twitter API keys that were used, please contact Kenny Luc.
 
