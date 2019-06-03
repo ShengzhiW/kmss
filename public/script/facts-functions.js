@@ -1,3 +1,7 @@
+// File: facts-functions.js
+//
+// This 
+
 $("#new-fact").click(function () {
   // alert( "Handler for .click() called." );
   $.ajax({
