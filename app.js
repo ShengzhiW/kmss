@@ -124,8 +124,7 @@ app.post('/checklist', (req, res) => {
 });
 
 app.post('/profpic', (req, res) => {
-
-  console.log(req.body);
+  console.log((req.body));
 })
 
 app.listen(3000);
