@@ -587,3 +587,12 @@ iframe {
 .live-update{
   color: #1396FF;
 }
+
+.nav-logo{
+  width: 200px;
+  margin: 10px 30px 10px 30px;
+}
+
+.nav-link {
+  padding: 10px 10px 10px 50px!important;
+}
