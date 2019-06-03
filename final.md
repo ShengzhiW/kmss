@@ -21,6 +21,7 @@
 8. [map_functions.js](public/script/map.js)
 9. [twitter_functions.js](public/script/twitter.js)
 10. *config.js
+      * Contains Twitter API keys that is used in App.js. This file is ignored from github for security purposes. If you'd like the Twitter API keys that were used, please contact Kenny Luc.
 
 
 ## (.handlebars) Files
