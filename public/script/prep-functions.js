@@ -1,8 +1,8 @@
 /* 
-* This file ensures that the checklist will be saved each time 
-* the user makes a change. It will also load the results from the
-* data base if the page is freshly loaded.
-*/
+ * This file ensures that the checklist will be saved each time 
+ * the user makes a change. It will also load the results from the
+ * data base if the page is freshly loaded.
+ */
 
 
 // fill in the checks from the db and start waiting for changes
