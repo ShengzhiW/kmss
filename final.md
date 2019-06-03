@@ -52,19 +52,25 @@
 
 ## (.handlebars) Files
 1. [home.handlebars](views/home.handlebars)
-   * Contains the HTML elements of the Home page of the application. It contains a "Random Hurricane Fact" button that uses AJAX to
+   * Contains the HTML elements of the Home page of the application. It contains a "Random Hurricane Fact" button that uses ajax to fetch a new fact each time the button is clicked.
 2. [login.handlebars](views/login.handlebars)
+   * Contains the HTML elements of the login page of the application. It will ask for the username and password to login.
 3. [maps.handlebars](views/maps.handlebars)
+   * Contins the HTML elements of the Weather Maps page of the application. This page will display a weather map based on the location that the suer has set.  
 4. [preparations.handlebars](views/preparations.handlebars)
+   * Contins the HTML elements of the Preparations page of the application. This page will display tips for preparing for the hurricane and various checklists with saved progress.  
 5. [shelters.handlebars](views/shelters.handlebars)
-    * Contains the HTML elements of the shelters page on the web application. It uses Google Map APIs to show the locations of shelters near your location. The data is pulled from a JSON file hosted by the Department of Homeland Security and displayed on an interactive map.
+   * Contains the HTML elements of the shelters page on the web application. It uses Google Map APIs to show the locations of shelters near your location. The data is pulled from a JSON file hosted by the Department of Homeland Security and displayed on an interactive map.
 6. [trending.handlebars](views/trending.handlebars)
+   * Contins the HTML elements of the Weather Maps page of the application. This page will display a live twitter feed for hurricane related feed and a official National Hurricane Center feed.  
 7. [head-hc.handlebars](views/partials/head-hc.handlebars)
+   * Contains the HTML elements to import various js files and stylesheets needed on every page of the applicaiton.
 8. [nav-hc.handlebars](views/partials/nav-hc.handlebars)
+   * Contains the HTML elements to generate a navbar on every page of the applicaiton.
 
 ## (.css) Files
-1. [animate.css](public/stylesheets/animate.css)
-2. [style.css](public/stylesheets/style.css)
+1. [style.css](public/stylesheets/style.css)
+   * Contains the Stylesheets adds style to each page in the application that adds various styles and animations (in addition to bootstrap and animate.css). It also imports a custom font.
 
 # Google Slides Link
 
