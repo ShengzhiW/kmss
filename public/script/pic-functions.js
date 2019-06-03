@@ -11,10 +11,15 @@ function readURL(input) {
 		};
     reader.readAsDataURL(input.files[0]);
   };
-
+  getNewPic();
 };
 
 $(document).ready(function(){
+  getNewPic();
+
+});
+
+function getNewPic(){
   picBase=""
   $.ajax({
     type: "GET",
@@ -27,5 +32,4 @@ $(document).ready(function(){
     }
   });
 
-
-});
+}
