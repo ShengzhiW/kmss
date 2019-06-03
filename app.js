@@ -6,16 +6,16 @@ var logger = require('morgan');
 var exphbs = require('express-handlebars');
 var firebase = require("firebase-admin");
 var fs = require('fs');
-var config = require('./config');
+// var config = require('./config');
 var Twit = require('twit')
-var T = new Twit({
-  consumer_key: config.consumer_key,
-  consumer_secret: config.consumer_secret,
-  access_token: config.access_token,
-  access_token_secret: config.access_token_secret,
-  timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
-  strictSSL: true, // optional - requires SSL certificates to be valid.
-});
+// var T = new Twit({
+//   consumer_key: config.consumer_key,
+//   consumer_secret: config.consumer_secret,
+//   access_token: config.access_token,
+//   access_token_secret: config.access_token_secret,
+//   timeout_ms: 60 * 1000, // optional HTTP request timeout to apply to all requests.
+//   strictSSL: true, // optional - requires SSL certificates to be valid.
+// });
 var tweetsArr = [];
 function grabHurricaneSeasonTweets() {
   var params = {
@@ -73,9 +73,6 @@ app.use(express.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// app.use(bodyParser.json({limit: '50mb'}));
-// app.use(express.json({limit:'50mb'}));
-
 
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -108,6 +105,12 @@ app.get('/buildchecklist', (req, res) => {
     res.send(data)
   });
 });
+app.get('/newpic', (req, res) => {
+  db.ref('profile-pic').once("value", function (snapshot) {
+    var data = snapshot.val()
+    res.send(data)
+  });
+});
 
 app.post('/checklist', (req, res) => {
   statusArr = req.body['items[]'];
@@ -124,9 +127,10 @@ app.post('/checklist', (req, res) => {
 });
 
 app.post('/profpic', (req, res) => {
-
-  console.log(req.body);
-})
+  var update = {};
+  update['profpic'] = req.body['pic[]'];
+  picRef.update(update)
+});
 
 app.listen(3000);
 module.exports = app;
