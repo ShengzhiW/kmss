@@ -6,6 +6,11 @@
    * Added early Twitter UI/animations
    * Updated overall look and feel of the app by implementing dark mode to all pages
 * [Marjorie Tolentino](https://github.com/marj-nt)<br />
+   * Worked on storyboards and early prototypes
+   * Incorporated animations for page loading and fact transitions
+   * Worked on UI feedback with hover and pointer styling for actionable
+   elements
+   * Worked on preparations card styling to suggest interactivity
 
 * [Shengzhi Wang](https://github.com/ShengzhiW)<br />
     * Implemented firebase to serve random facts with firebase with ajax.
