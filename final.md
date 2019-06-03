@@ -47,6 +47,8 @@
       * Sets the location of the user using and gets the location based on the longitude and latitude. It can also performa a get request to get a new hurricane fact.
 12. [prep-functions.js](public/script/prep-functions.js)
       * Populates the checkboxes in preparations.handlebars using the data from the firebase database. It also watches for any changes in checkbox states and will save firebase if any checkboxes are changed.
+13. [pic-functions.js](public/script/pic-functions.js)
+      * Changes the profile picture and loads the new profile picture back into the page. It will alsoload the profile picture upon the page's first load
 
 ## (.handlebars) Files
 1. [home.handlebars](views/home.handlebars)
