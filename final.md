@@ -20,8 +20,18 @@
 7. [trending.js](routes/trending.js)
 8. [map_functions.js](public/script/map.js)
 9. [twitter_functions.js](public/script/twitter.js)
+10. [config.js]
 
 ## (.handlebars) Files
+1. [home.handlebars](views/home.handlebars)
+2. [login.handlebars](views/login.handlebars)
+3. [maps.handlebars](views/maps.handlebars)
+4. [preparations.handlebars](views/preparations.handlebars)
+5. [shelters.handlebars](views/shelters.handlebars)
+6. [trending.handlebars](views/trending.handlebars)
+7. [head-hc.handlebars](views/partials/head-hc.handlebars)
+8. [nav-hc.handlebars](views/partials/nav-hc.handlebars)
 
 ## (.css) Files
-
+1. [animate.css](public/stylesheets/animate.css)
+2. [style.css](public/stylesheets/style.css)
