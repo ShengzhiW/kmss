@@ -1,3 +1,10 @@
+// This file defines how the profile picture can be changed and saved 
+// in the database. It will also tell the webpage to load an already 
+// saved profile picture from the database upon load.
+
+
+// function to read the image uploaded and submit a post request to save
+// it in the database 
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
@@ -14,11 +21,15 @@ function readURL(input) {
   getNewPic();
 };
 
+
+// load the profile picture on page load
 $(document).ready(function(){
   getNewPic();
 
 });
 
+
+// fetch the newest profile picture
 function getNewPic(){
   picBase=""
   $.ajax({
