@@ -1,8 +1,17 @@
+/* 
+* This file ensures that the checklist will be saved each time 
+* the user makes a change. It will also load the results from the
+* data base if the page is freshly loaded.
+*/
+
+
+// fill in the checks from the db and start waiting for changes
 $(document).ready(function() {
     fillChecklist();
     checklistChange();
 });
 
+// send the checlist to the base when it detects a change
 function checklistChange(){
     $("body").on("change", ".form-check-input", function(){
         var checklistArr = { 'items' : []};
@@ -14,6 +23,9 @@ function checklistChange(){
     });
 }
 
+
+// This function builds the checklist, including the item name and
+// whether the item is checked
 function fillChecklist(){
     $.ajax({
       type: "GET",

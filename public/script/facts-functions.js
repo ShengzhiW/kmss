@@ -1,9 +1,14 @@
-// File: facts-functions.js
-//
-// This 
+/* File: facts-functions.js
+*
+* This file manages how the a new fact is laoded and how the user's location is
+* recorded in local storage and displayed.
+*/
 
+/* functions that gets a new random fact when the user clicks
+* on the appropriate button. It uses a get request to get
+* a new fact
+*/
 $("#new-fact").click(function () {
-  // alert( "Handler for .click() called." );
   $.ajax({
     type: "GET",
     url: "/facts",
@@ -16,11 +21,14 @@ $("#new-fact").click(function () {
   });
 });
  
+
+// Displays the the user's location
 window.cb = function cb(json) {
-  //do what you want with the json
   $("#home-city").html('Your Location:<br>' + json.address.road + ', ' + json.address.city + '<br>' + json.address.country);
 }
 
+
+// get the user's location and store it in cookies
 function getgeo() {
 
   $("#location-loading").toggleClass('hidden');
