@@ -4,6 +4,9 @@
 * [Marjorie Tolentino](https://github.com/marj-nt)<br />
 
 * [Shengzhi Wang](https://github.com/ShengzhiW)<br />
+    * Implemented firebase to serve random facts with firebase with ajax.
+    * Added database support to the checklist to save user progress. Progress will be populated each time the page loads 
+    * Implmented Twitter UI/animations with live refreshes.
 
 * [Kenny Luc](https://github.com/kennyyluc)<br />
     * Added Twitter API functionality that pulls live tweets from twitter containing informaiton about hurricanes.
@@ -12,16 +15,25 @@
 # Code Functionality 
 ## (.js) Files
 1. [app.js](app.js)
+      
 2. [home.js](routes/home.js)
+      * renders the home.handlebars page when the home page is requested
 3. [login.js](routes/login.js)
+      * renders the login.handlebars page when the login page is requested
 4. [maps.js](routes/maps.js)
+      * renders the maps.handlebars page when the hurricane maps page is requested
 5. [preparations.js](routes/preparations.js)
+      * renders the preparations.handlebars page when the preparations page is requested
 6. [shelters.js](routes/shelters.js)
+      * renders the shelters.handlebars page when the shelters page is requested
 7. [trending.js](routes/trending.js)
+      * renders the trending.handlebars page when the trending page is requested
 8. [map-functions.js](public/script/map-functions.js)
+      * Configures the shelter map using the the coordinates set by the user to display a google map overlaid with nearby shelter locations.
 9. [twitter-functions.js](public/script/twitter-functions.js)
+      * Reqests fresh tweets automatically at time intervals to reload into the page with animation.
 10. *config.js
-      * Contains Twitter API keys that is used in App.js. This file is ignored from github for security purposes. If you'd like the Twitter API keys that were used, please contact Kenny Luc.
+      * Contains Google and Twitter API keys that is used in App.js. This file is ignored from github for security purposes. If you'd like the Twitter API keys that were used, please contact Kenny Luc.
 
 
 ## (.handlebars) Files
