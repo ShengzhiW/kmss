@@ -1,7 +1,7 @@
 /* 
  * This file is used to connect our Twitter API and Twitter node module to our trending page. 
  * Every 5 seconds it will grab new tweets and display it on the page.
-*/
+ */
 
 // Parses the link from the text and wraps it all inside an <a> tag
 var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
