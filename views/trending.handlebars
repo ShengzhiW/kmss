@@ -6,23 +6,33 @@
     <div class="page-body">
       <h2 class="center headings animated fadeInUp" id="headings-trending">Trending</h2>
       <div class="container center">
-        <div class="row justify-content-center">
-        </div>
-        <div class="tweets">
-          <h4 class="trending-h4">Latest Tweets about Hurricanes</h4>
-          <br>
-          <div class="live-update"><img style="width:20px; margin-right:20px" src="/images/loading.gif">Getting the latest tweets...</div>
-          <div id="live-tweets">
+        <!-- <div class="row justify-content-center">
+        </div> -->
+
+
+
+        <div class="tweets row">
+          <div class="col-xs-6">
+            <h4 class="trending-h4">Latest Tweets about Hurricanes</h4>
+            <br>
+            <div class="live-update"><img style="width:20px; margin-right:20px" src="/images/loading.gif">Getting the latest tweets...</div>
+            <div id="live-tweets">
+            </div>
+            <br>
+            <br>
+          </div>
+
+          <div class="col-xs-6">
+            <h4 class="trending-h4">Latest Tweets from the National Hurricane Center</h4>
+            <br>
+            <div class="row tweets-row animated fadeIn slow">
+              <a class="twitter-timeline" data-height="800" data-dnt="true" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/NHC_Atlantic?ref_src=twsrc%5Etfw">Tweets by NHC_Atlantic</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
           </div>
           <br>
-          <br>
-          <h4 class="trending-h4">Latest Tweets from the National Hurricane Center</h4>
-          <br>
-          <div class="row tweets-row animated fadeIn slow">
-            <a class="twitter-timeline" data-height="800" data-dnt="true" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/NHC_Atlantic?ref_src=twsrc%5Etfw">Tweets by NHC_Atlantic</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
-          <br>
         </div>
+
+
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
