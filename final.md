@@ -15,19 +15,19 @@
 # Code Functionality 
 ## (.js) Files
 1. [app.js](app.js)
-      
+      * This file is what is run to start our application. It connects our Firebase database, our Twitter API, and node package modules that is used in our handlebar files. Additionally, it connects our pages together so that they can be navigated from the navigation bar. 
 2. [home.js](routes/home.js)
-      * renders the home.handlebars page when the home page is requested
+      * renders the home.handlebars page when the home page is requested by app.js
 3. [login.js](routes/login.js)
-      * renders the login.handlebars page when the login page is requested
+      * renders the login.handlebars page when the login page is requested by app.js
 4. [maps.js](routes/maps.js)
-      * renders the maps.handlebars page when the hurricane maps page is requested
+      * renders the maps.handlebars page when the hurricane maps page is requested by app.js
 5. [preparations.js](routes/preparations.js)
-      * renders the preparations.handlebars page when the preparations page is requested
+      * renders the preparations.handlebars page when the preparations page is requested by app.js
 6. [shelters.js](routes/shelters.js)
-      * renders the shelters.handlebars page when the shelters page is requested
+      * renders the shelters.handlebars page when the shelters page is requested by app.js
 7. [trending.js](routes/trending.js)
-      * renders the trending.handlebars page when the trending page is requested
+      * renders the trending.handlebars page when the trending page is requested by app.js
 8. [map-functions.js](public/script/map-functions.js)
       * Configures the shelter map using the the coordinates set by the user to display a google map overlaid with nearby shelter locations.
 9. [twitter-functions.js](public/script/twitter-functions.js)
