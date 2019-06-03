@@ -20,7 +20,8 @@
 7. [trending.js](routes/trending.js)
 8. [map_functions.js](public/script/map.js)
 9. [twitter_functions.js](public/script/twitter.js)
-10. [config.js]
+10. *config.js
+
 
 ## (.handlebars) Files
 1. [home.handlebars](views/home.handlebars)
