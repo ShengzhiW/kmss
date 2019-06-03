@@ -7,9 +7,6 @@
       <h2 class="center headings animated fadeInUp" id="headings-trending">Trending</h2>
       <div class="container center">
         <div class="row justify-content-center">
-         {{!--  <div class="trend-search-bar animated fadeIn slow">
-            <input type="text" placeholder="Search Tweets...">
-          </div> --}}
         </div>
         <div class="tweets">
           <h4 class="trending-h4">Latest Tweets about Hurricanes</h4>
@@ -22,21 +19,7 @@
           <h4 class="trending-h4">Latest Tweets from the National Hurricane Center</h4>
           <br>
           <div class="row tweets-row animated fadeIn slow">
-{{!--             <blockquote class="twitter-tweet">
-              <p lang="en" dir="ltr">
-                Today&#39;s
-                <a href="https://twitter.com/hashtag/hurricane?src=hash&amp;ref_src=twsrc%5Etfw">#hurricane</a>
-                preparedness topic is on Assembling Disaster Supplies. You need to prepare for both the hurricane and for what could be a long recovery period too. Prepare for AT LEAST one week.
-                <a href="https://t.co/ij60LpXceY">https://t.co/ij60LpXceY</a>
-                <a href="https://twitter.com/hashtag/HurricanePrep?src=hash&amp;ref_src=twsrc%5Etfw">#HurricanePrep</a>
-                <a href="https://twitter.com/hashtag/HurricaneStrong?src=hash&amp;ref_src=twsrc%5Etfw">#HurricaneStrong</a>
-                <a href="https://t.co/X40qWqGmir">pic.twitter.com/X40qWqGmir</a>
-              </p>
-              &mdash; National Hurricane Center (@NHC_Atlantic)
-              <a href="https://twitter.com/NHC_Atlantic/status/1125747114326106112?ref_src=twsrc%5Etfw">May 7, 2019</a>
-            </blockquote> --}}
             <a class="twitter-timeline" data-height="800" data-dnt="true" data-theme="dark" data-link-color="#E81C4F" href="https://twitter.com/NHC_Atlantic?ref_src=twsrc%5Etfw">Tweets by NHC_Atlantic</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          
           </div>
           <br>
         </div>
@@ -45,36 +28,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript">
-      var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-      function linkify(text) {
-          var urlRegex =/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-          return text.replace(urlRegex, function(url) {
-              return '<a href="' + url + '">' + url + '</a>';
-          });
-      }
-      setInterval( function(){
-            console.log("getting tweets");
-            $.ajax({
-                type: "GET",
-                url: "/tweets",
-                data: 'json',
-                success: function(html){
-                   console.log(html);
-                   if (html.length == 0)
-                      return;
-                   $('.live-update').html('')
-                   $("#live-tweets").html("");
-                  for (const tweet of html) {
-                    console.log(tweet);
-                    $("#live-tweets").append('<div class="tweet-ind"><img src="/images/twitter.png" style="width: 20px; margin-right:20px">'+linkify(tweet)+'</div>');
-                  }
-                },
-                error: function (request, status, error) {
-                  console.log(request.responseText);
-                }
-            });
-      }, 3000);
-    </script>
+    <script src="/script/twitter.js"></script>
   </body>
 </html>

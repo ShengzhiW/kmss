@@ -38,4 +38,5 @@ shelter locations and only displays the ones in the same state.
 # Ambitious data display/visualization ideas
 
 One of our goals is to allow the user to save shelter locations on our shelters page. This will allow users to more easily plan their route in a case of an emergency. Additionally, we also plan to
-display freeway routes that should be taken in case of an emergency.
+display designated evacuation/freeway routes meant to direct traffic inland in case of an emergency.  This would be accessed via Data.gov 's primary and secondary routes from state to state.  For easier navigation we would want to visualize this data on one of the existing maps rather than a separate screen and have a button to filter/toggle between shelters and routes, or both.  Ideally, we would want the default data to pertain to the user's current location, but we would have a "view all routes" feature.
+The data would be visualized on the map as a highlighted path, while making obvious a major freeway the user should take.
