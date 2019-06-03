@@ -3,7 +3,7 @@ function initMap() {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(function (location) {
 			var options = {
-				zoom: 6,
+				zoom: 12,
 				center: {
 					lat: location.coords.latitude,
 					lng: location.coords.longitude
@@ -44,7 +44,7 @@ function geocode(lat, lng, map) {
 }
 
 function getShelters(state, map) {
-	axios.get('https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/National_Shelter_System_Facilities/FeatureServer/0/query?where=1%3D1&outFields=STATE&outSR=4326&f=json')
+	axios.get('https://services1.arcgis.com/Hp6G80Pky0om7QvQ/arcgis/rest/services/National_Shelter_System_Facilities/FeatureServer/0/query?where=1%3D1&outFields=NAME,ADDRESS,CITY,STATE,ZIP,TELEPHONE,TYPE&outSR=4326&f=json')
 		.then(function (response) {
 			//console.log(response.data.features[0].attributes.STATE);
 			//console.log(state);
@@ -58,7 +58,8 @@ function getShelters(state, map) {
 					lat: shelter.geometry.y,
 					lng: shelter.geometry.x
 				};
-				displayShelter(coords, map);
+				displayShelter(coords, map, shelter.attributes.NAME, shelter.attributes.ADDRESS, shelter.attributes.STATE,
+					shelter.attributes.ZIP, shelter.attributes.TELEPHONE);
 			})
 		})
 		.catch(function (error) {
@@ -66,9 +67,27 @@ function getShelters(state, map) {
 		})
 }
 
-function displayShelter(coords, map) {
+function displayShelter(coords, map, name, address, state, zip, telephone) {
 	var marker = new google.maps.Marker({
 		position: coords,
 		map: map
 	})
+
+	var contentString = '<div id="content">' +
+		'<div id="siteNotice">' +
+		'</div>' +
+		'<h3 id="firstHeading" class="firstHeading">' + name + '</h3>' +
+		'<p>' + address + ', ' + state + ' ' + zip + '</p>' +
+		'<p>' + telephone + '</p>' +
+		'<div id="bodyContent">' +
+		'</div>' +
+		'</div>';
+
+	var infowindow = new google.maps.InfoWindow({
+		content: contentString
+	});
+
+	marker.addListener('click', function () {
+		infowindow.open(map, marker);
+	});
 }
