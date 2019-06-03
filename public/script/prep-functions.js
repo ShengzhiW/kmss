@@ -67,9 +67,6 @@ function fillChecklist(){
            else if (i<98) {
              $("#possess-list").append(newhtml)
            }
-           // console.log(newhtml)
-
-
          }
       }
   });
