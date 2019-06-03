@@ -1,3 +1,8 @@
+/*
+ * HTML file containing the code to generate the shelters page. It's core functionality is defined in
+ * map-functions.js. This page is what gets displayed on the front end after grabbing the information.
+ */
+
 <!DOCTYPE html>
 <html>
   {{> head-hc}}
@@ -13,6 +18,7 @@
   <body class="home-body grey-bg">
     {{> nav-hc}}
     <h2 class="center headings animated fadeInUp slow">Nearby Shelters</h2>
+    <h3 class="center headings animated fadeInUp slow">Please enable location and services.</h3>
     <div id="map">
     </div>
     <script src="/script/map-functions.js"></script>
