@@ -67,5 +67,6 @@
 2. [style.css](public/stylesheets/style.css)
 
 # Google Slides Link
-
+https://docs.google.com/presentation/d/122ULw1_dcJVxKD0Whk8Fj6GZPZwIVBfywunL4kfpQ4Y/edit#slide=id.p
 # Demo Video
+https://www.youtube.com/watch?v=efUxCbbSZAg&feature=youtu.be&fbclid=IwAR3AD5TaihjHLzw1pTwyt8lfarfyXq-gGsa0oee_MIDEpvNRfF6984-I-SI
